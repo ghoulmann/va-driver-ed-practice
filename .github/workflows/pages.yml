@@ -1,0 +1,61 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Installing from requirements-dev.txt rather than naming packages here
+      # keeps CI and a contributor's machine on the same versions.
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install development dependencies
+        run: python -m pip install --quiet -r requirements-dev.txt
+
+      - name: Check the item bank
+        run: python -m pytest
+
+      - name: Check the adaptive engine
+        run: node tests/run.mjs
+
+      - name: Lint
+        run: python -m pyflakes tools/*.py tests/test_items.py
+
+      # An allowlist, not a directory upload. Only files the page actually
+      # loads are served; documentation and research stay in the repository
+      # without becoming part of the site. Adding a runtime file means adding
+      # it here deliberately.
+      - name: Stage the site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/data _site/js
+          cp index.html styles.css credits.ip.html _site/
+          cp js/*.js _site/js/
+          cp data/items.json data/taxonomy.json data/resources.json _site/data/
+          echo "staged:"; find _site -type f | sort
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

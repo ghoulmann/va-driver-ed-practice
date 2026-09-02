@@ -1,0 +1,1428 @@
+[
+  {
+    "id": "de13a-handheld-hold-001",
+    "sol": [
+      "DE.13a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Under Virginia's current distracted-driving law, what is a driver prohibited from doing with a handheld personal communications device while driving on a highway?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Holding it at all",
+        "rationale": "Correct. The statute prohibits holding the device, not merely typing on it."
+      },
+      {
+        "id": "b",
+        "text": "Reading or sending text messages, but holding it is allowed",
+        "rationale": "This was the older, narrower rule. The law was broadened to cover holding the device at all."
+      },
+      {
+        "id": "c",
+        "text": "Using it for anything other than navigation",
+        "rationale": "There is no navigation carve-out for holding the device; hands-free use is what the law permits."
+      },
+      {
+        "id": "d",
+        "text": "Using it only while the vehicle is in motion above 25 mph",
+        "rationale": "No speed threshold appears in the statute."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Va. Code § 46.2-818.2 makes it unlawful to hold a handheld personal communications device while driving on a highway. A first offense is $125 and a second or subsequent offense is $250, with a mandatory $250 fine in a highway work zone. Anything that reduces this to a 'texting ban' understates it.",
+    "difficulty0": 1150,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §1"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-818.2",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.2/",
+          "effective": "2021-01-01"
+        }
+      ],
+      "note": "Enacted 2020 cc. 250, 543; work-zone fine added 2023 cc. 557, 558."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de13a-handheld-primary-002",
+    "sol": [
+      "DE.13a"
+    ],
+    "region": "va",
+    "form": "true_false",
+    "stem": "In Virginia, drivers under 18 are subject to a separate, stricter cell phone ban than adult drivers.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True",
+        "rationale": "This described the law before 2021, when § 46.2-1078.1 imposed a total ban on drivers under 18."
+      },
+      {
+        "id": "b",
+        "text": "False",
+        "rationale": "Correct. That section was repealed and the handheld rule is now uniform across ages."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-1078.1, the under-18 total cell phone ban, was repealed effective January 1, 2021 by the same act that created the general handheld prohibition. The rule in § 46.2-818.2 now applies uniformly to every driver and is a primary offense for everyone — an officer may stop a vehicle for it alone.",
+    "difficulty0": 1280,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §1"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-1078.1 (repealed)",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1078.1/",
+          "effective": "2021-01-01"
+        },
+        {
+          "cite": "Va. Code § 46.2-818.2",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.2/",
+          "effective": "2021-01-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de18e-move-over-scope-003",
+    "sol": [
+      "DE.18e",
+      "DE.6a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "You are on a four-lane highway with two lanes in your direction. Which stopped vehicle triggers Virginia's Move Over duty?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only police, fire, and rescue vehicles with flashing lights",
+        "rationale": "This was the pre-2023 scope. The duty has since been extended."
+      },
+      {
+        "id": "b",
+        "text": "Only emergency vehicles and tow trucks",
+        "rationale": "Still too narrow — the 2023 amendment reached ordinary vehicles."
+      },
+      {
+        "id": "c",
+        "text": "Any stationary vehicle with hazard flashers on, caution signs displayed, or lit flares",
+        "rationale": "Correct. Subsection B covers ordinary vehicles showing any of these."
+      },
+      {
+        "id": "d",
+        "text": "Any vehicle stopped on the shoulder for any reason",
+        "rationale": "Close, but the statute lists specific signals — flashers, caution signs, or lit flares — not merely being stopped."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Va. Code § 46.2-861.1(B), added effective July 1, 2023, extends the Move Over duty beyond emergency vehicles to any stationary vehicle with hazard warning flashers activated, caution signs displayed, or lit flares or torches. Change lanes away when you can; when that is unreasonable or unsafe, proceed with due caution at a safe speed.",
+    "difficulty0": 1250,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §2"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-861.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-861.1/",
+          "effective": "2023-07-01"
+        }
+      ],
+      "note": "Amended by 2023 cc. 616, 617. The former Move Over section, § 46.2-921.1, was repealed by Acts 2019 c. 850 — citations to it are dead."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de18e-move-over-penalty-004",
+    "sol": [
+      "DE.18e"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "A driver fails to move over or slow down for a stopped vehicle displaying flashing blue and red emergency lights. How is that violation classified in Virginia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reckless driving",
+        "rationale": "Correct. Violating the emergency-vehicle branch of the statute is reckless driving."
+      },
+      {
+        "id": "b",
+        "text": "A traffic infraction",
+        "rationale": "That is the classification for the ordinary-vehicle branch added in 2023, not the emergency-vehicle branch."
+      },
+      {
+        "id": "c",
+        "text": "A Class 1 misdemeanor",
+        "rationale": "The statute does not classify it this way."
+      },
+      {
+        "id": "d",
+        "text": "A civil penalty with no points",
+        "rationale": "Reckless driving carries six demerit points; this is not a civil penalty."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Va. Code § 46.2-861.1(A) makes failure to move over for a vehicle displaying flashing blue, red, or amber emergency lights reckless driving. The 2023 subsection (B), covering ordinary vehicles with hazard flashers, caution signs, or flares, is a traffic infraction instead. Subsection C adds suspension up to one year for property damage and up to two years for injury or death.",
+    "difficulty0": 1300,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §2"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-861.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-861.1/",
+          "effective": "2023-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de10a-zero-tolerance-005",
+    "sol": [
+      "DE.10a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Under Virginia's Zero Tolerance law, what blood alcohol concentration range applies to a driver under 21?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.01% to under 0.08%",
+        "rationale": "The threshold is 0.02%, not 0.01%."
+      },
+      {
+        "id": "b",
+        "text": "0.02% to under 0.08%",
+        "rationale": "Correct."
+      },
+      {
+        "id": "c",
+        "text": "0.02% to under 0.05%",
+        "rationale": "The upper bound is 0.08%, where the general DUI offense takes over."
+      },
+      {
+        "id": "d",
+        "text": "Any detectable amount of alcohol",
+        "rationale": "'Zero tolerance' names the policy, but the statute sets a measurable 0.02% floor."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 18.2-266.1 applies to drivers under 21 with a BAC of 0.02% or more but less than 0.08%. It is a Class 1 misdemeanor carrying a one-year license suspension and a minimum $500 fine or 50 hours of community service. At 0.08% or more, the general DUI statute § 18.2-266 applies at any age.",
+    "difficulty0": 1150,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §3"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 18.2-266.1",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266.1/",
+          "effective": "2026-07-01"
+        }
+      ],
+      "note": "Rule stable 2021-2026; amended 2026 c. 1112 without changing the BAC range."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de10a-per-se-threshold-006",
+    "sol": [
+      "DE.10a",
+      "DE.9c"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "At what blood alcohol concentration is a Virginia driver guilty of DUI regardless of observed impairment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "More than 0.08%",
+        "rationale": "A common misstatement. Exactly 0.08% is already an offense — the statute says 'or more'."
+      },
+      {
+        "id": "b",
+        "text": "0.08% or more",
+        "rationale": "Correct, and the precise wording matters."
+      },
+      {
+        "id": "c",
+        "text": "0.10% or more",
+        "rationale": "Virginia lowered its per se limit to 0.08% in 2005."
+      },
+      {
+        "id": "d",
+        "text": "0.05% or more",
+        "rationale": "0.05% is a level at which effects are measurable, not the per se limit."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 18.2-266 sets the per se limit at 0.08 grams or more per 210 liters of breath (or per 100 milliliters of blood). Course material that says a driver must 'exceed' 0.08 is wrong at exactly 0.08 — the safe formulation is always '0.08 or more'.",
+    "difficulty0": 1320,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §3"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 18.2-266",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266/",
+          "effective": "2005-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de10a-refusal-first-007",
+    "sol": [
+      "DE.10a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "A driver arrested for DUI refuses a breath test for the first time. What follows under Virginia's Implied Consent law?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A civil offense with a one-year license suspension",
+        "rationale": "Correct."
+      },
+      {
+        "id": "b",
+        "text": "A Class 1 misdemeanor with a three-year revocation",
+        "rationale": "That is a second or subsequent refusal within 10 years."
+      },
+      {
+        "id": "c",
+        "text": "No consequence, since testing is voluntary",
+        "rationale": "Operating on a Virginia highway is itself consent to testing after a DUI arrest."
+      },
+      {
+        "id": "d",
+        "text": "A 90-day suspension and a mandatory driver improvement clinic",
+        "rationale": "That combination belongs to demerit-point accumulation, not to test refusal."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Va. Code § 18.2-268.2 makes operating a vehicle on a Virginia highway consent to breath or blood testing if arrested for DUI. Under § 18.2-268.3 a first refusal is a civil offense with a one-year suspension; a second or subsequent refusal within 10 years is a Class 1 misdemeanor with a three-year revocation.",
+    "difficulty0": 1250,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §3"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 18.2-268.2",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.2/",
+          "effective": "2005-07-01"
+        },
+        {
+          "cite": "Va. Code § 18.2-268.3",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.3/",
+          "effective": "2026-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de10b-marijuana-vehicle-008",
+    "sol": [
+      "DE.10b",
+      "DE.9a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Who commits an offense when marijuana is consumed in a moving vehicle on a Virginia public highway?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The driver only",
+        "rationale": "The statute reaches passengers as well."
+      },
+      {
+        "id": "b",
+        "text": "The driver and any passenger who consumes",
+        "rationale": "Correct — § 4.1-1107 applies to both."
+      },
+      {
+        "id": "c",
+        "text": "Nobody, since possession by adults is lawful",
+        "rationale": "Lawful possession is not lawful consumption in a moving vehicle."
+      },
+      {
+        "id": "d",
+        "text": "Only a driver under 21",
+        "rationale": "The prohibition is not age-limited."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 4.1-1107 makes it a Class 4 misdemeanor for the driver or any passenger to use or consume marijuana in a moving vehicle on a public highway. An 'open container' is any vessel other than the original sealed manufacturer's container. Note also that Virginia has no per se THC blood limit — § 18.2-266's per se list covers cocaine, methamphetamine, PCP, and MDMA only, so marijuana impairment must be proved as impairment.",
+    "difficulty0": 1300,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §4"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 4.1-1107",
+          "url": "https://law.lis.virginia.gov/vacode/title4.1/chapter11/section4.1-1107/",
+          "effective": "2021-07-01"
+        },
+        {
+          "cite": "Va. Code § 18.2-266",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266/",
+          "effective": "2005-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de1c-reckless-speed-009",
+    "sol": [
+      "DE.1c",
+      "DE.11d"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Regardless of the posted speed limit, driving at what speed is reckless driving in Virginia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In excess of 75 mph",
+        "rationale": "Not a threshold in the statute."
+      },
+      {
+        "id": "b",
+        "text": "In excess of 80 mph",
+        "rationale": "This was the law until July 1, 2020, and is the most common stale answer on this topic."
+      },
+      {
+        "id": "c",
+        "text": "In excess of 85 mph",
+        "rationale": "Correct."
+      },
+      {
+        "id": "d",
+        "text": "In excess of 90 mph",
+        "rationale": "Higher than the statute requires."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Va. Code § 46.2-862 makes it reckless driving to drive 20 mph or more over the posted limit, or in excess of 85 mph regardless of the limit. The absolute threshold was raised from 80 to 85 mph effective July 1, 2020 — any course written before then teaches 80.",
+    "difficulty0": 1200,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §8"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-862",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-862/",
+          "effective": "2020-07-01"
+        }
+      ],
+      "note": "Threshold raised from 80 to 85 mph by 2020 cc. 444, 445."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de1a-permit-age-010",
+    "sol": [
+      "DE.1a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "What is the minimum age to obtain a Virginia learner's permit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15 years",
+        "rationale": "Six months short."
+      },
+      {
+        "id": "b",
+        "text": "15 years and 6 months",
+        "rationale": "Correct."
+      },
+      {
+        "id": "c",
+        "text": "16 years",
+        "rationale": "16 years and 3 months is the minimum for a license, not a permit."
+      },
+      {
+        "id": "d",
+        "text": "16 years and 3 months",
+        "rationale": "That is the minimum licensing age."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-335 sets the minimum learner's permit age at 15 years and 6 months. The permit must be held nine months, or until age 18, whichever comes first (§ 46.2-335.2), and the minimum age for a driver's license is 16 years and 3 months (§ 46.2-334).",
+    "difficulty0": 1080,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §6"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-335",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335/",
+          "effective": "2020-07-01"
+        },
+        {
+          "cite": "Va. Code § 46.2-335.2",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335.2/",
+          "effective": "2020-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de1a-practice-hours-011",
+    "sol": [
+      "DE.1a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "How much supervised practice driving must a Virginia learner's permit holder complete, and how much of it must be after sunset?",
+    "options": [
+      {
+        "id": "a",
+        "text": "40 hours, at least 10 after sunset",
+        "rationale": "Both figures are short of Virginia's requirement."
+      },
+      {
+        "id": "b",
+        "text": "45 hours, at least 15 after sunset",
+        "rationale": "Correct."
+      },
+      {
+        "id": "c",
+        "text": "45 hours, at least 10 after sunset",
+        "rationale": "The total is right; the night-driving portion is 15 hours."
+      },
+      {
+        "id": "d",
+        "text": "50 hours, at least 15 after sunset",
+        "rationale": "Virginia requires 45 hours, not 50."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-335 requires 45 hours of behind-the-wheel practice, at least 15 of them after sunset, certified by a parent, foster parent, or legal guardian.",
+    "difficulty0": 1120,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §6"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-335",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335/",
+          "effective": "2020-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de1a-provisional-passengers-012",
+    "sol": [
+      "DE.1a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "During the first year holding a Virginia provisional license, how many passengers under 21 may the driver carry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None",
+        "rationale": "One is permitted, and family and household members are exempt entirely."
+      },
+      {
+        "id": "b",
+        "text": "One",
+        "rationale": "Correct, not counting family or household members."
+      },
+      {
+        "id": "c",
+        "text": "Three",
+        "rationale": "Three becomes available after the first year, and only in specific circumstances."
+      },
+      {
+        "id": "d",
+        "text": "No limit, as long as everyone is belted",
+        "rationale": "The passenger restriction is independent of the belt requirement."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-334.01 limits a provisional licensee to one passenger under 21 during the first year. After the first year the limit rises to three, and only when driving to or from a school-sponsored activity, when accompanied by a licensed driver 21 or older, or in an emergency. Family and household members are exempt from both limits. Enforcement is secondary — an officer may not stop a vehicle for this alone.",
+    "difficulty0": 1220,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §6"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-334.01",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-334.01/",
+          "effective": "2021-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de15a-belts-all-seats-013",
+    "sol": [
+      "DE.15a",
+      "DE.15c"
+    ],
+    "region": "va",
+    "form": "true_false",
+    "stem": "In Virginia, an adult riding in the back seat is not required to wear a safety belt.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True",
+        "rationale": "This was the law until July 1, 2025, when the requirement was extended to every seat."
+      },
+      {
+        "id": "b",
+        "text": "False",
+        "rationale": "Correct — every occupant 18 and older must be belted in every seat."
+      }
+    ],
+    "answer": "b",
+    "explanation": "The Christopher King Law, amending Va. Code § 46.2-1094 effective July 1, 2025, requires every occupant 18 and older to wear a safety belt in every seat, including the back, whenever the vehicle is in motion on a public highway. It also covers rideshare drivers and passengers. Note that enforcement remains secondary — the statute still bars stopping a vehicle for this alone — and the civil penalty is $25 with no demerit points.",
+    "difficulty0": 1240,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §7"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-1094",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1094/",
+          "effective": "2025-07-01"
+        }
+      ],
+      "note": "Amended by 2025 c. 414 (HB 2475). Virginia did NOT move to primary enforcement."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de15a-child-restraint-014",
+    "sol": [
+      "DE.15a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Until what point must a child ride in a rear-facing child restraint in Virginia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Until age 1, or 20 pounds",
+        "rationale": "An older national guideline, not Virginia's current rule."
+      },
+      {
+        "id": "b",
+        "text": "Until at least age 2, or the manufacturer's minimum forward-facing weight limit",
+        "rationale": "Correct."
+      },
+      {
+        "id": "c",
+        "text": "Until age 4",
+        "rationale": "Longer than the statute requires for rear-facing."
+      },
+      {
+        "id": "d",
+        "text": "Until the child weighs 40 pounds",
+        "rationale": "Virginia's rule is age-based with a manufacturer-limit alternative, not a flat weight."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-1095 requires rear-facing until the child reaches at least age 2 or the minimum weight limit for a forward-facing seat set by the manufacturer. A child restraint device is required through age 7 — that is, until the eighth birthday — and children 8 to under 18 must use a safety belt. Restraints go in the rear seat unless the vehicle has no passenger airbag or it is disabled.",
+    "difficulty0": 1260,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §7"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-1095",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1095/",
+          "effective": "2019-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de15b-truck-bed-015",
+    "sol": [
+      "DE.15b"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Under what circumstances may a person under 16 ride in the open cargo bed of a pickup truck on a Virginia highway?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never, without exception",
+        "rationale": "Two narrow exceptions exist."
+      },
+      {
+        "id": "b",
+        "text": "In an authorized parade, or in farm operations moving between fields",
+        "rationale": "Correct — these are the statute's only exceptions."
+      },
+      {
+        "id": "c",
+        "text": "When travelling under 25 mph on a rural road",
+        "rationale": "No speed or road-type exception exists."
+      },
+      {
+        "id": "d",
+        "text": "When being transported to or from a hunting trip",
+        "rationale": "Hunting is specifically not an exception."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-1156.1 prohibits transporting anyone under 16 in the rear cargo area of a pickup on a Virginia highway, with exceptions only for authorized parades and for farm operations moving between fields.",
+    "difficulty0": 1290,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §7"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-1156.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1156.1/",
+          "effective": "2000-07-01"
+        }
+      ],
+      "note": "The prohibition and exceptions are confirmed; the section does not state a penalty amount."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de21c-minimum-limits-016",
+    "sol": [
+      "DE.21c",
+      "DE.21d"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "For a Virginia auto policy effective in 2026, what are the minimum liability limits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$25,000 / $50,000 / $20,000",
+        "rationale": "The pre-2022 minimums."
+      },
+      {
+        "id": "b",
+        "text": "$30,000 / $60,000 / $20,000",
+        "rationale": "These applied to policies effective from 2022 through the end of 2024."
+      },
+      {
+        "id": "c",
+        "text": "$50,000 / $100,000 / $25,000",
+        "rationale": "Correct for policies effective on or after January 1, 2025."
+      },
+      {
+        "id": "d",
+        "text": "$100,000 / $300,000 / $50,000",
+        "rationale": "Higher than Virginia requires; these are common optional limits."
+      }
+    ],
+    "answer": "c",
+    "explanation": "Va. Code § 46.2-472 phased in higher minimums in two steps: $30,000/$60,000/$20,000 for policies effective January 1, 2022 through December 31, 2024, then $50,000/$100,000/$25,000 for policies effective on or after January 1, 2025. The figures are bodily injury for one person, bodily injury for two or more, and property damage.",
+    "difficulty0": 1270,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §10"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-472",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-472/",
+          "effective": "2025-01-01"
+        }
+      ],
+      "note": "Two-step phase-in enacted by 2021 Sp. Sess. I c. 273."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de21d-umv-fee-017",
+    "sol": [
+      "DE.21d",
+      "DE.21c"
+    ],
+    "region": "va",
+    "form": "true_false",
+    "stem": "A Virginia vehicle owner may pay an uninsured motor vehicle fee to DMV instead of carrying liability insurance.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True",
+        "rationale": "This was possible until July 1, 2024, at a cost of $500 — and it never provided the motorist any coverage."
+      },
+      {
+        "id": "b",
+        "text": "False",
+        "rationale": "Correct. The fee was eliminated and insurance is now mandatory."
+      }
+    ],
+    "answer": "b",
+    "explanation": "The uninsured motor vehicle fee was eliminated effective July 1, 2024 by 2023 SB 951. Every vehicle registered in Virginia must now carry liability insurance meeting the statutory minimums, or else a bond, cash deposit, or self-insurance certificate. Driving or registering uninsured means suspension, a $600 noncompliance fee, and an SR-22 filing for three years.",
+    "difficulty0": 1300,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §10"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-706",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/",
+          "effective": "2024-07-01"
+        },
+        {
+          "cite": "Virginia DMV, new laws effective July 1, 2024",
+          "url": "https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024",
+          "effective": "2024-07-01"
+        }
+      ],
+      "note": "The DMV insurance-requirements page still carries a stale reference to a payment plan for 'the statutory fee'. The statute controls."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de21d-nonrenewal-notice-018",
+    "sol": [
+      "DE.21d"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "If your insurer decides not to renew your auto policy, how far in advance must it notify you?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 days",
+        "rationale": "Too short; this figure appears in some course material and is wrong."
+      },
+      {
+        "id": "b",
+        "text": "30 days",
+        "rationale": "A common answer, and what this course teaches — but the statute requires 45."
+      },
+      {
+        "id": "c",
+        "text": "45 days",
+        "rationale": "Correct under § 38.2-2212(E)."
+      },
+      {
+        "id": "d",
+        "text": "60 days",
+        "rationale": "Longer than the statute requires."
+      }
+    ],
+    "answer": "c",
+    "course_answer": "b",
+    "divergence": "The course grades 30 days as correct. Virginia law requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
+    "explanation": "Va. Code § 38.2-2212(E) requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
+    "difficulty0": 1350,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §10"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 38.2-2212(E)",
+          "url": "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2212/",
+          "effective": "2020-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de11d-aggressive-driving-019",
+    "sol": [
+      "DE.11d",
+      "DE.11c"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "Virginia's aggressive driving statute lists specific predicate offenses. Which of these is NOT among them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Failing to yield the right-of-way",
+        "rationale": "This IS listed in § 46.2-868.1 — and the course keys it as the exception, which is backwards."
+      },
+      {
+        "id": "b",
+        "text": "Following too closely",
+        "rationale": "Listed in the statute."
+      },
+      {
+        "id": "c",
+        "text": "Accelerating rapidly into traffic",
+        "rationale": "Correct — this phrasing does not appear among the statute's predicate offenses."
+      },
+      {
+        "id": "d",
+        "text": "Passing on the right off the roadway",
+        "rationale": "Listed in the statute."
+      }
+    ],
+    "answer": "c",
+    "course_answer": "a",
+    "divergence": "The course grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the course's own reading page says so.",
+    "explanation": "Va. Code § 46.2-868.1 defines aggressive driving by reference to a list of predicate violations committed with intent to harass, intimidate, injure, or obstruct. Failure to yield is on that list. Note that course material is inconsistent on whether intent is required.",
+    "difficulty0": 1400,
+    "source": {
+      "kind": "reauthored",
+      "basis": "Va. Code § 46.2-868.1"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-868.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-868.1/",
+          "effective": "2020-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de7b-i66-hov-020",
+    "sol": [
+      "DE.7b",
+      "DE.7e"
+    ],
+    "region": "nova",
+    "form": "multiple_choice",
+    "stem": "What occupancy qualifies a vehicle for toll-free HOV travel on I-66 inside the Capital Beltway during restricted hours?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two or more occupants",
+        "rationale": "This was the rule until December 5, 2022, when the requirement rose to three."
+      },
+      {
+        "id": "b",
+        "text": "Three or more occupants",
+        "rationale": "Correct, with an E-ZPass Flex switched to HOV mode."
+      },
+      {
+        "id": "c",
+        "text": "Four or more occupants",
+        "rationale": "Higher than any Virginia express facility requires."
+      },
+      {
+        "id": "d",
+        "text": "Any occupancy, as long as you have an E-ZPass",
+        "rationale": "A standard E-ZPass pays the dynamic toll; occupancy is what makes travel free."
+      }
+    ],
+    "answer": "b",
+    "explanation": "I-66 inside the Beltway changed from HOV-2 to HOV-3+ on December 5, 2022. Restrictions and tolling apply eastbound 5:30–9:30 a.m. and westbound 3–7 p.m., Monday through Friday excluding federal holidays — not around the clock. I-66 outside the Beltway, the I-495 Express Lanes, and the I-95/I-395 Express Lanes are all HOV-3+ as well.",
+    "difficulty0": 1280,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §11"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "VDOT, HOV lanes",
+          "url": "https://www.vdot.virginia.gov/travel-traffic/commuters/hov/",
+          "effective": "2022-12-05"
+        },
+        {
+          "cite": "VDOT, 66 Express — using the lanes",
+          "url": "https://www.vdot.virginia.gov/projects/major-projects/66expresslanes/using-the-lanes/",
+          "effective": "2022-12-05"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de7b-ezpass-flex-021",
+    "sol": [
+      "DE.7b"
+    ],
+    "region": "nova",
+    "form": "true_false",
+    "stem": "A carpool of three people with a standard E-ZPass travels free on the Northern Virginia express lanes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "True",
+        "rationale": "Occupancy alone is not enough — the transponder must be able to declare HOV mode."
+      },
+      {
+        "id": "b",
+        "text": "False",
+        "rationale": "Correct. Toll-free HOV travel requires an E-ZPass Flex switched to HOV ON."
+      }
+    ],
+    "answer": "b",
+    "explanation": "An E-ZPass Flex — the transponder with the HOV switch — is required for toll-free HOV travel on the I-66, I-495, and I-95/I-395 express lanes. A standard E-ZPass is charged the dynamic toll even with three or more occupants aboard.",
+    "difficulty0": 1330,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §11"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "VDOT, HOV lanes",
+          "url": "https://www.vdot.virginia.gov/travel-traffic/commuters/hov/",
+          "effective": "2022-12-05"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de7b-hov-penalty-nova-022",
+    "sol": [
+      "DE.7b",
+      "DE.1c"
+    ],
+    "region": "nova",
+    "form": "multiple_choice",
+    "stem": "How does an HOV violation in Northern Virginia (Planning District 8) differ from one elsewhere in the Commonwealth?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It carries escalating fines and demerit points on repeat offenses",
+        "rationale": "Correct."
+      },
+      {
+        "id": "b",
+        "text": "It is a criminal misdemeanor rather than an infraction",
+        "rationale": "It remains a traffic infraction."
+      },
+      {
+        "id": "c",
+        "text": "There is no difference; the penalty is uniform statewide",
+        "rationale": "The statute sets a separate escalating schedule for Planning District 8."
+      },
+      {
+        "id": "d",
+        "text": "It results in immediate license suspension",
+        "rationale": "No suspension attaches to an HOV violation."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Under Va. Code § 33.2-501 an HOV violation is generally a $100 traffic infraction, not a moving violation, with no demerit points. In Planning District 8 the schedule escalates: $125 first, $250 for a second within five years, $500 for a third, $1,000 for a fourth and beyond — and three demerit points attach to each second and subsequent offense within five years. Motorcycles, transit buses, emergency and law-enforcement vehicles, and vehicles with clean special fuel plates are exempt.",
+    "difficulty0": 1380,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §11"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 33.2-501",
+          "url": "https://law.lis.virginia.gov/vacode/title33.2/chapter5/section33.2-501/",
+          "effective": "2019-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de18g-school-bus-023",
+    "sol": [
+      "DE.18g",
+      "DE.6a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "When must you NOT stop for a school bus that is loading or unloading with its stop arm out?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never — you must always stop, from every direction",
+        "rationale": "Close, but the statute does provide a divided-highway exception."
+      },
+      {
+        "id": "b",
+        "text": "When the bus is on the other roadway of a divided highway",
+        "rationale": "Correct — also an access road or a driveway separated by a physical barrier or unpaved area."
+      },
+      {
+        "id": "c",
+        "text": "When you are travelling in the opposite direction on any road",
+        "rationale": "Opposite-direction traffic must stop unless the roadways are divided."
+      },
+      {
+        "id": "d",
+        "text": "When there are two or more lanes in your direction",
+        "rationale": "Lane count alone does not create an exception; separation of the roadways does."
+      }
+    ],
+    "answer": "b",
+    "explanation": "Va. Code § 46.2-859 requires stopping for a stopped school bus loading or unloading from any direction, except where the bus is on the other roadway of a divided highway, on an access road, or on a driveway separated by a physical barrier or unpaved area. Violation is reckless driving. Localities may also authorize stop-arm cameras under § 46.2-844, with a $250 civil penalty.",
+    "difficulty0": 1310,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §9"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-859",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-859/",
+          "effective": "2023-07-01"
+        },
+        {
+          "cite": "Va. Code § 46.2-844",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-844/",
+          "effective": "2021-07-01"
+        }
+      ],
+      "note": "The course states the exception's scope two incompatible ways and hides it in a hover tooltip. The statute is the authority here."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de18i-speed-camera-024",
+    "sol": [
+      "DE.18i",
+      "DE.1c"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "You receive a mailed citation from a photo speed monitoring device in a Virginia work zone. What is the consequence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A civil penalty up to $100, not added to your driving record or used for insurance",
+        "rationale": "Correct."
+      },
+      {
+        "id": "b",
+        "text": "A traffic infraction with three demerit points",
+        "rationale": "A mailed citation is a civil penalty and carries no points."
+      },
+      {
+        "id": "c",
+        "text": "A civil penalty up to $500 plus points",
+        "rationale": "The cap is $100 and no points attach."
+      },
+      {
+        "id": "d",
+        "text": "Nothing enforceable, since camera citations are advisory",
+        "rationale": "They are enforceable civil penalties against the vehicle."
+      }
+    ],
+    "answer": "a",
+    "explanation": "Va. Code § 46.2-882.1 authorizes photo speed monitoring where a vehicle exceeds the limit by at least 10 mph, with a civil penalty not exceeding $100. A mailed citation 'shall not be made part of the operating record' and cannot be used for insurance purposes. If an officer instead issues a summons in person at the time, that conviction does go on the record. The 2026 session limited work-zone cameras to when workers are actually present.",
+    "difficulty0": 1340,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §9"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Va. Code § 46.2-882.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-882.1/",
+          "effective": "2026-07-01"
+        }
+      ],
+      "note": "2026 chapters 963-970, 986, 1033 overhauled the program. Some provisions have delayed effective dates not yet identified — avoid dated questions on camera enforcement."
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de1a-demerit-clinic-025",
+    "sol": [
+      "DE.1a",
+      "DE.1c"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "An adult driver accumulates 12 demerit points in 12 months. What does DMV require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An advisory letter only",
+        "rationale": "That is the response at 8 points in 12 months."
+      },
+      {
+        "id": "b",
+        "text": "A mandatory driver improvement clinic",
+        "rationale": "Correct."
+      },
+      {
+        "id": "c",
+        "text": "A 90-day license suspension",
+        "rationale": "Suspension attaches at 18 points in 12 months (or 24 in 24)."
+      },
+      {
+        "id": "d",
+        "text": "License revocation for one year",
+        "rationale": "Revocation for a year applies to a third under-18 violation, not to this threshold."
+      }
+    ],
+    "answer": "b",
+    "explanation": "For drivers 18 and older: 8 points in 12 months (or 12 in 24) brings an advisory letter; 12 in 12 months (or 18 in 24) brings a mandatory driver improvement clinic; 18 in 12 months (or 24 in 24) brings a 90-day suspension plus the clinic. Since July 1, 2026, a driver facing that suspension must be offered a written choice between it and nine months in the Intelligent Speed Assistance Program, with 30 days to respond.",
+    "difficulty0": 1290,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §5"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "Virginia DMV, demerit point system",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/improvement/points/system",
+          "effective": "2026-07-01"
+        },
+        {
+          "cite": "Va. Code § 46.2-506",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-506/",
+          "effective": "2026-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de24a-vulnerable-user-026",
+    "sol": [
+      "DE.24c",
+      "DE.18a"
+    ],
+    "region": "va",
+    "form": "multiple_choice",
+    "stem": "A driver fails to stop for a pedestrian lawfully crossing and causes serious bodily injury. How is that charged in Virginia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A traffic infraction only",
+        "rationale": "That is the charge when no serious injury results."
+      },
+      {
+        "id": "b",
+        "text": "A Class 1 misdemeanor",
+        "rationale": "Correct, where the victim is a vulnerable road user and the injury is serious or fatal."
+      },
+      {
+        "id": "c",
+        "text": "Reckless driving",
+        "rationale": "Not the classification this statute assigns."
+      },
+      {
+        "id": "d",
+        "text": "A civil penalty payable to the locality",
+        "rationale": "This is a criminal charge, not a civil penalty."
+      }
+    ],
+    "answer": "b",
+    "explanation": "2025 SB 1416 makes failure to stop for a pedestrian a traffic infraction, escalating to a Class 1 misdemeanor when it results in serious bodily injury or the death of a vulnerable road user lawfully crossing a highway.",
+    "difficulty0": 1360,
+    "source": {
+      "kind": "reauthored",
+      "basis": "2026 law verification §12"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "2025 Va. Acts, SB 1416; Division of Legislative Services, In Due Course 2025",
+          "url": "https://dls.virginia.gov/pubs/idc/idc25.pdf",
+          "effective": "2025-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de5f-lane-change-order-027",
+    "sol": [
+      "DE.5f",
+      "DE.8a"
+    ],
+    "btw_skill": "btw.lane-change",
+    "region": "va",
+    "form": "ordering",
+    "stem": "Put the steps of a safe lane change in order.",
+    "steps": [
+      "Check mirrors",
+      "Signal",
+      "Check the blind zone",
+      "Adjust speed",
+      "Move when the way is clear",
+      "Use minimal steering",
+      "Establish lane position",
+      "Cancel the signal"
+    ],
+    "answerOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "answer": null,
+    "options": [],
+    "explanation": "The VDOE sequence checks mirrors before signalling, and checks the blind zone after signalling — the signal goes out early so other drivers have the most warning, while the blind-zone check happens as late as possible so it reflects current conditions. Cancelling the signal is part of the maneuver, not an afterthought.",
+    "difficulty0": 1200,
+    "source": {
+      "kind": "reauthored",
+      "basis": "VDOE Module 13, Key Concepts for Lesson 3"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 3",
+          "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
+          "effective": "2022-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  },
+  {
+    "id": "de17c-off-road-recovery-028",
+    "sol": [
+      "DE.17c",
+      "DE.17b"
+    ],
+    "btw_skill": "btw.off-road-recovery",
+    "region": "va",
+    "form": "ordering",
+    "stem": "Your right tires drop onto the shoulder at speed. Put the recovery steps in order.",
+    "steps": [
+      "Keep both hands firmly on the wheel and hold your lane position on the shoulder",
+      "Ease off the accelerator and let the vehicle slow — do not brake",
+      "Drop both tires fully off the roadway to establish maximum control",
+      "Determine a target and path of travel back onto the pavement",
+      "With speed under control, steer toward the target and ease onto the paved surface",
+      "Counter-steer as the front tire regains the roadway to hold lane position"
+    ],
+    "answerOrder": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "answer": null,
+    "options": [],
+    "explanation": "The instinct to brake and steer back immediately is what turns a shoulder drop into a rollover or a head-on. VDOE's sequence removes speed first without braking, commits fully to the shoulder rather than fighting the edge, and only then steers back — with a counter-steer ready, because the tire regaining pavement grips suddenly.",
+    "difficulty0": 1350,
+    "source": {
+      "kind": "reauthored",
+      "basis": "VDOE Module 13, Key Concepts for Lesson 6"
+    },
+    "accuracy": {
+      "status": "verified",
+      "verified_on": "2026-09-01",
+      "authority": [
+        {
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6",
+          "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
+          "effective": "2022-07-01"
+        }
+      ]
+    },
+    "status": "reviewed"
+  }
+]

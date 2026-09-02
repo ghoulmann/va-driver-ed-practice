@@ -1,0 +1,954 @@
+{
+  "version": 1,
+  "source": {
+    "title": "2022 Virginia Standards of Learning for Driver Education",
+    "publisher": "Virginia Department of Education",
+    "document": "Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13",
+    "appendix": "C"
+  },
+  "sol": [
+    {
+      "id": "DE.1",
+      "statement": "Virginia traffic laws, the licensing process, and other driving responsibilities",
+      "concepts": [
+        {
+          "id": "DE.1a",
+          "letter": "a",
+          "text": "graduated driver licensing, types of licenses, and required documentation"
+        },
+        {
+          "id": "DE.1b",
+          "letter": "b",
+          "text": "traffic safety information in the Virginia Driver's Manual"
+        },
+        {
+          "id": "DE.1c",
+          "letter": "c",
+          "text": "the motor vehicle section of the Code of Virginia"
+        },
+        {
+          "id": "DE.1d",
+          "letter": "d",
+          "text": "becoming an organ and tissue donor"
+        }
+      ]
+    },
+    {
+      "id": "DE.2",
+      "statement": "Basic vehicle operating procedures",
+      "concepts": [
+        {
+          "id": "DE.2a",
+          "letter": "a",
+          "text": "pre-driving procedures"
+        },
+        {
+          "id": "DE.2b",
+          "letter": "b",
+          "text": "starting procedures for automatic transmissions"
+        },
+        {
+          "id": "DE.2c",
+          "letter": "c",
+          "text": "vehicle information, warning, and control devices"
+        },
+        {
+          "id": "DE.2d",
+          "letter": "d",
+          "text": "efficient accelerating, braking, and steering techniques"
+        },
+        {
+          "id": "DE.2e",
+          "letter": "e",
+          "text": "vehicle securing procedures"
+        }
+      ]
+    },
+    {
+      "id": "DE.3",
+      "statement": "Vehicle reference points to establish position and execute basic maneuvers",
+      "concepts": [
+        {
+          "id": "DE.3a",
+          "letter": "a",
+          "text": "parking"
+        },
+        {
+          "id": "DE.3b",
+          "letter": "b",
+          "text": "turning"
+        },
+        {
+          "id": "DE.3c",
+          "letter": "c",
+          "text": "establishing lane position"
+        },
+        {
+          "id": "DE.3d",
+          "letter": "d",
+          "text": "backing"
+        }
+      ]
+    },
+    {
+      "id": "DE.4",
+      "statement": "How laws of physics affect force of impact",
+      "concepts": [
+        {
+          "id": "DE.4a",
+          "letter": "a",
+          "text": "sitting and hand position"
+        },
+        {
+          "id": "DE.4b",
+          "letter": "b",
+          "text": "steering, braking, and accelerating"
+        },
+        {
+          "id": "DE.4c",
+          "letter": "c",
+          "text": "compensating for shifts in vehicle load that affect performance"
+        },
+        {
+          "id": "DE.4d",
+          "letter": "d",
+          "text": "managing front tire traction loss (understeer) and rear tire traction loss (oversteer)"
+        },
+        {
+          "id": "DE.4e",
+          "letter": "e",
+          "text": "analyzing cause and severity of collision types: head-on, near-frontal, broadside, rear-end, rollover, sideswipe"
+        }
+      ]
+    },
+    {
+      "id": "DE.5",
+      "statement": "Managing visibility, time, and space to reduce risk and avoid collisions",
+      "concepts": [
+        {
+          "id": "DE.5a",
+          "letter": "a",
+          "text": "targeting and tracking skills"
+        },
+        {
+          "id": "DE.5b",
+          "letter": "b",
+          "text": "the SEEiT space-management decision-making process"
+        },
+        {
+          "id": "DE.5c",
+          "letter": "c",
+          "text": "following distance and space concepts"
+        },
+        {
+          "id": "DE.5d",
+          "letter": "d",
+          "text": "selecting appropriate speed, maintaining adequate space, and judging distance"
+        },
+        {
+          "id": "DE.5e",
+          "letter": "e",
+          "text": "estimating time and space needs for passing"
+        },
+        {
+          "id": "DE.5f",
+          "letter": "f",
+          "text": "identifying changes to line-of-sight and path-of-travel"
+        },
+        {
+          "id": "DE.5g",
+          "letter": "g",
+          "text": "responding to open and closed spaces"
+        }
+      ]
+    },
+    {
+      "id": "DE.6",
+      "statement": "Adjustments at controlled and uncontrolled intersections, curves, work zones, railroad crossings, and hills",
+      "concepts": [
+        {
+          "id": "DE.6a",
+          "letter": "a",
+          "text": "right-of-way rules"
+        },
+        {
+          "id": "DE.6b",
+          "letter": "b",
+          "text": "roadway signs, signals, and markings"
+        },
+        {
+          "id": "DE.6c",
+          "letter": "c",
+          "text": "slope/grade of terrain"
+        },
+        {
+          "id": "DE.6d",
+          "letter": "d",
+          "text": "vehicle position and speed control"
+        }
+      ]
+    },
+    {
+      "id": "DE.7",
+      "statement": "Unique characteristics of an expressway and risk-management strategies",
+      "concepts": [
+        {
+          "id": "DE.7a",
+          "letter": "a",
+          "text": "identifying various interchanges"
+        },
+        {
+          "id": "DE.7b",
+          "letter": "b",
+          "text": "entering, merging, and exiting from traffic flow"
+        },
+        {
+          "id": "DE.7c",
+          "letter": "c",
+          "text": "selecting vehicle position"
+        },
+        {
+          "id": "DE.7d",
+          "letter": "d",
+          "text": "changing lanes"
+        },
+        {
+          "id": "DE.7e",
+          "letter": "e",
+          "text": "preparing for higher speeds, limited access, and increased traffic"
+        },
+        {
+          "id": "DE.7f",
+          "letter": "f",
+          "text": "the interstate highway numbering system"
+        }
+      ]
+    },
+    {
+      "id": "DE.8",
+      "statement": "Communication strategies to other highway transportation users",
+      "concepts": [
+        {
+          "id": "DE.8a",
+          "letter": "a",
+          "text": "vehicle position and driver action"
+        },
+        {
+          "id": "DE.8b",
+          "letter": "b",
+          "text": "communication devices"
+        },
+        {
+          "id": "DE.8c",
+          "letter": "c",
+          "text": "hand signals for slow/stop, right turn, and left turn"
+        }
+      ]
+    },
+    {
+      "id": "DE.9",
+      "statement": "Physiological, psychological, and cognitive effects of alcohol and other drugs",
+      "concepts": [
+        {
+          "id": "DE.9a",
+          "letter": "a",
+          "text": "effects of alcohol, marijuana, and other drugs on the body"
+        },
+        {
+          "id": "DE.9b",
+          "letter": "b",
+          "text": "prescription and nonprescription medications"
+        },
+        {
+          "id": "DE.9c",
+          "letter": "c",
+          "text": "legal responsibility not to use alcohol and other drugs that affect safe operation"
+        }
+      ]
+    },
+    {
+      "id": "DE.10",
+      "statement": "Legal and economic consequences of alcohol and other drug use while driving",
+      "concepts": [
+        {
+          "id": "DE.10a",
+          "letter": "a",
+          "text": "Implied Consent, Use and Lose, and Zero Tolerance laws"
+        },
+        {
+          "id": "DE.10b",
+          "letter": "b",
+          "text": "drug laws"
+        },
+        {
+          "id": "DE.10c",
+          "letter": "c",
+          "text": "strategies for alternative means of safe transportation"
+        },
+        {
+          "id": "DE.10d",
+          "letter": "d",
+          "text": "consequences of impaired driving"
+        }
+      ]
+    },
+    {
+      "id": "DE.11",
+      "statement": "Consequences of aggressive driving and the influence of emotions",
+      "concepts": [
+        {
+          "id": "DE.11a",
+          "letter": "a",
+          "text": "stress and anxiety"
+        },
+        {
+          "id": "DE.11b",
+          "letter": "b",
+          "text": "anger management"
+        },
+        {
+          "id": "DE.11c",
+          "letter": "c",
+          "text": "the relationship between aggressive driving and road rage"
+        },
+        {
+          "id": "DE.11d",
+          "letter": "d",
+          "text": "legal and financial consequences of reckless driving and road rage"
+        }
+      ]
+    },
+    {
+      "id": "DE.12",
+      "statement": "Effects of fatigue and other conditions that impact driver performance",
+      "concepts": [
+        {
+          "id": "DE.12a",
+          "letter": "a",
+          "text": "fatigue warning signs, preventative measures, and self-assessment"
+        },
+        {
+          "id": "DE.12b",
+          "letter": "b",
+          "text": "circadian rhythms and sleep deprivation"
+        },
+        {
+          "id": "DE.12c",
+          "letter": "c",
+          "text": "short and long term physical and cognitive effects on the driving task"
+        },
+        {
+          "id": "DE.12d",
+          "letter": "d",
+          "text": "chronic health conditions that may affect the driving task"
+        }
+      ]
+    },
+    {
+      "id": "DE.13",
+      "statement": "Visual, manual, and cognitive distractions and the impact of divided attention",
+      "concepts": [
+        {
+          "id": "DE.13a",
+          "letter": "a",
+          "text": "distracted driving laws"
+        },
+        {
+          "id": "DE.13b",
+          "letter": "b",
+          "text": "strategies to prevent distractions"
+        },
+        {
+          "id": "DE.13c",
+          "letter": "c",
+          "text": "technology distractions"
+        },
+        {
+          "id": "DE.13d",
+          "letter": "d",
+          "text": "vehicle distractions"
+        },
+        {
+          "id": "DE.13e",
+          "letter": "e",
+          "text": "outdoor distractions"
+        },
+        {
+          "id": "DE.13f",
+          "letter": "f",
+          "text": "cost/benefit self-analysis"
+        }
+      ]
+    },
+    {
+      "id": "DE.14",
+      "statement": "Environmental changes affecting visibility and traction",
+      "concepts": [
+        {
+          "id": "DE.14a",
+          "letter": "a",
+          "text": "driving at night"
+        },
+        {
+          "id": "DE.14b",
+          "letter": "b",
+          "text": "fog and other weather-related conditions"
+        },
+        {
+          "id": "DE.14c",
+          "letter": "c",
+          "text": "road construction and other adverse road conditions"
+        }
+      ]
+    },
+    {
+      "id": "DE.15",
+      "statement": "Proper use of vehicle occupant-protection features",
+      "concepts": [
+        {
+          "id": "DE.15a",
+          "letter": "a",
+          "text": "restraint systems (active, passive, and child)"
+        },
+        {
+          "id": "DE.15b",
+          "letter": "b",
+          "text": "laws regarding passengers in truck beds"
+        },
+        {
+          "id": "DE.15c",
+          "letter": "c",
+          "text": "legal obligations"
+        }
+      ]
+    },
+    {
+      "id": "DE.16",
+      "statement": "How technological advancements in safety design affect driving practices",
+      "concepts": [
+        {
+          "id": "DE.16a",
+          "letter": "a",
+          "text": "driver/passenger protection"
+        },
+        {
+          "id": "DE.16b",
+          "letter": "b",
+          "text": "child safety"
+        },
+        {
+          "id": "DE.16c",
+          "letter": "c",
+          "text": "driver assistance technology"
+        },
+        {
+          "id": "DE.16d",
+          "letter": "d",
+          "text": "vehicle technology"
+        },
+        {
+          "id": "DE.16e",
+          "letter": "e",
+          "text": "autonomous driving features (five levels)"
+        },
+        {
+          "id": "DE.16f",
+          "letter": "f",
+          "text": "vehicle stability and traction control systems, including four-wheel, all-wheel, front-wheel, and rear-wheel drive on adverse road conditions"
+        }
+      ]
+    },
+    {
+      "id": "DE.17",
+      "statement": "Emergency response strategies to avoid or reduce collision severity",
+      "concepts": [
+        {
+          "id": "DE.17a",
+          "letter": "a",
+          "text": "how decisions are influenced by the environment, the vehicle, driver error, and driver capabilities"
+        },
+        {
+          "id": "DE.17b",
+          "letter": "b",
+          "text": "evasive maneuvers using braking and steering combinations"
+        },
+        {
+          "id": "DE.17c",
+          "letter": "c",
+          "text": "off-road recovery"
+        }
+      ]
+    },
+    {
+      "id": "DE.18",
+      "statement": "Performance characteristics of other road users and sharing the roadway",
+      "concepts": [
+        {
+          "id": "DE.18a",
+          "letter": "a",
+          "text": "pedestrians and animals"
+        },
+        {
+          "id": "DE.18b",
+          "letter": "b",
+          "text": "bicycles, scooters, mopeds, and motorcycles"
+        },
+        {
+          "id": "DE.18c",
+          "letter": "c",
+          "text": "tractor-trailers, trucks, and construction vehicles"
+        },
+        {
+          "id": "DE.18d",
+          "letter": "d",
+          "text": "sport utility vehicles, recreation vehicles, and trailers"
+        },
+        {
+          "id": "DE.18e",
+          "letter": "e",
+          "text": "emergency vehicles"
+        },
+        {
+          "id": "DE.18f",
+          "letter": "f",
+          "text": "funeral processions"
+        },
+        {
+          "id": "DE.18g",
+          "letter": "g",
+          "text": "passenger and school buses"
+        },
+        {
+          "id": "DE.18h",
+          "letter": "h",
+          "text": "farm machinery and horse-drawn vehicles"
+        },
+        {
+          "id": "DE.18i",
+          "letter": "i",
+          "text": "work zones"
+        }
+      ]
+    },
+    {
+      "id": "DE.19",
+      "statement": "Vehicle braking systems and proper braking techniques",
+      "concepts": [
+        {
+          "id": "DE.19a",
+          "letter": "a",
+          "text": "conventional brake systems including regenerative braking"
+        },
+        {
+          "id": "DE.19b",
+          "letter": "b",
+          "text": "controlled braking, trail braking, and threshold braking"
+        },
+        {
+          "id": "DE.19c",
+          "letter": "c",
+          "text": "antilock brake systems (ABS) and steering toward a target"
+        },
+        {
+          "id": "DE.19d",
+          "letter": "d",
+          "text": "how preventive maintenance reduces brake failure, including the rationale for annual state safety inspection"
+        }
+      ]
+    },
+    {
+      "id": "DE.20",
+      "statement": "Preventive maintenance and warning signs of needed repair",
+      "concepts": [
+        {
+          "id": "DE.20a",
+          "letter": "a",
+          "text": "vehicle warning devices"
+        },
+        {
+          "id": "DE.20b",
+          "letter": "b",
+          "text": "lights and signals"
+        },
+        {
+          "id": "DE.20c",
+          "letter": "c",
+          "text": "steering and suspension systems"
+        },
+        {
+          "id": "DE.20d",
+          "letter": "d",
+          "text": "tires and braking systems"
+        },
+        {
+          "id": "DE.20e",
+          "letter": "e",
+          "text": "fluids, cooling systems, and belts"
+        },
+        {
+          "id": "DE.20f",
+          "letter": "f",
+          "text": "appropriate disposal of batteries, fluids, tires, and other hazardous materials"
+        }
+      ]
+    },
+    {
+      "id": "DE.21",
+      "statement": "Vehicle ownership responsibilities and operating costs",
+      "concepts": [
+        {
+          "id": "DE.21a",
+          "letter": "a",
+          "text": "methods of purchasing or leasing a vehicle"
+        },
+        {
+          "id": "DE.21b",
+          "letter": "b",
+          "text": "different types of vehicles (hybrid, electric, traditional)"
+        },
+        {
+          "id": "DE.21c",
+          "letter": "c",
+          "text": "Financial Responsibility Law (Code of Virginia \u00a7 46.2-706)"
+        },
+        {
+          "id": "DE.21d",
+          "letter": "d",
+          "text": "required and optional insurance coverages"
+        },
+        {
+          "id": "DE.21e",
+          "letter": "e",
+          "text": "title and registration requirements"
+        },
+        {
+          "id": "DE.21f",
+          "letter": "f",
+          "text": "Virginia inspection and emissions expectations and requirements"
+        },
+        {
+          "id": "DE.21g",
+          "letter": "g",
+          "text": "regular and depreciation maintenance costs"
+        }
+      ]
+    },
+    {
+      "id": "DE.22",
+      "statement": "Trip planning skills using available resources",
+      "concepts": [
+        {
+          "id": "DE.22a",
+          "letter": "a",
+          "text": "navigation options for trip planning"
+        },
+        {
+          "id": "DE.22b",
+          "letter": "b",
+          "text": "safe and legal practices for using navigation tools while driving"
+        },
+        {
+          "id": "DE.22c",
+          "letter": "c",
+          "text": "route options when planning a trip"
+        },
+        {
+          "id": "DE.22d",
+          "letter": "d",
+          "text": "total cost of a trip including fuel, toll road, food, hotels, and entertainment"
+        }
+      ]
+    },
+    {
+      "id": "DE.23",
+      "statement": "Personal transportation options and environmental impact",
+      "concepts": [
+        {
+          "id": "DE.23a",
+          "letter": "a",
+          "text": "the purpose of emission testing and Virginia laws pertaining to testing and yearly license plate registration"
+        },
+        {
+          "id": "DE.23b",
+          "letter": "b",
+          "text": "safe consumer practices for public transportation and rideshare services including carpooling"
+        },
+        {
+          "id": "DE.23c",
+          "letter": "c",
+          "text": "environmental impact of public transportation, rideshare, or carpooling"
+        },
+        {
+          "id": "DE.23d",
+          "letter": "d",
+          "text": "energy conservation and alternative or renewable energy sources"
+        },
+        {
+          "id": "DE.23e",
+          "letter": "e",
+          "text": "green driving practices"
+        }
+      ]
+    },
+    {
+      "id": "DE.24",
+      "statement": "Interacting with law enforcement and responding to a crash",
+      "concepts": [
+        {
+          "id": "DE.24a",
+          "letter": "a",
+          "text": "appropriate interaction with law enforcement to reduce risk (safely pulling over, required documents, physical movements to reduce perceived threat)"
+        },
+        {
+          "id": "DE.24b",
+          "letter": "b",
+          "text": "driver responsibilities and rights during the law enforcement interaction"
+        },
+        {
+          "id": "DE.24c",
+          "letter": "c",
+          "text": "responsibilities at a crash scene"
+        }
+      ]
+    }
+  ],
+  "btw_skills": [
+    {
+      "id": "btw.pre-drive",
+      "name": "Inside pre-drive checks",
+      "environment": "low_risk",
+      "steps": [
+        "Place keys on dashboard",
+        "Lock door",
+        "Adjust seat for leg/heel position",
+        "Adjust and secure restraints",
+        "Adjust steering wheel",
+        "Adjust side and rear mirrors",
+        "Check that the parking brake is set"
+      ]
+    },
+    {
+      "id": "btw.starting",
+      "name": "Starting the vehicle",
+      "environment": "low_risk",
+      "steps": [
+        "Place key in ignition",
+        "Place right foot on brake",
+        "Unlock ignition",
+        "Check gauges",
+        "Put gear selector in park",
+        "Start engine",
+        "Select any accessories",
+        "Select proper gear",
+        "Check traffic",
+        "Release parking brake"
+      ]
+    },
+    {
+      "id": "btw.securing",
+      "name": "Securing the vehicle",
+      "environment": "low_risk",
+      "steps": [
+        "Place selector in park",
+        "Set the parking brake",
+        "Turn off any accessories",
+        "Turn off and lock ignition switch",
+        "Remove restraints",
+        "Check traffic",
+        "Exit vehicle",
+        "Lock door and activate alarms",
+        "Remove items from the trunk"
+      ]
+    },
+    {
+      "id": "btw.steering",
+      "name": "Push-pull (hand-to-hand) steering",
+      "environment": "low_risk",
+      "steps": [
+        "Drive with hands at 9-3 or lower",
+        "Pull the wheel in the direction of the turn",
+        "Use the outside of the steering wheel rim",
+        "Move the wheel continuously and smoothly into the turn",
+        "When the hand reaches the bottom of the wheel, bring it up to 10 o'clock",
+        "Return the wheel with the same smooth continuous motion until positioned in lane"
+      ]
+    },
+    {
+      "id": "btw.lane-change",
+      "name": "Changing lanes",
+      "environment": "moderate_risk",
+      "steps": [
+        "Check mirrors",
+        "Signal",
+        "Check blind zone",
+        "Adjust speed",
+        "Move when the way is clear",
+        "Use minimal steering",
+        "Establish lane position",
+        "Cancel signal"
+      ]
+    },
+    {
+      "id": "btw.turnabout-2pt",
+      "name": "Two-point turnabout (backing into a driveway)",
+      "environment": "moderate_risk",
+      "steps": [
+        "Search for traffic behind",
+        "Back into a driveway on the same side of the roadway",
+        "Place vehicle in drive and signal",
+        "Check for a gap in traffic"
+      ]
+    },
+    {
+      "id": "btw.turnabout-3pt",
+      "name": "Three-point turnabout",
+      "environment": "moderate_risk",
+      "steps": [
+        "Position the vehicle next to the right curb",
+        "Move forward while turning the wheel sharply left toward the opposite side of the road",
+        "Stop approximately one foot from the curb",
+        "Shift to reverse; check traffic and back to the right until the front bumper is in the center of the road",
+        "Shift to drive, target the center of the path of travel, and accelerate"
+      ]
+    },
+    {
+      "id": "btw.park-perpendicular",
+      "name": "Perpendicular parking (pull in)",
+      "environment": "moderate_risk",
+      "steps": [
+        "Signal intention and position the vehicle 5-6 feet from the space",
+        "Move forward until the side mirror aligns with the first pavement marking",
+        "Turn the wheel rapidly in the direction of the space, controlling speed",
+        "Steer toward a target in the center of the space and straighten the wheels",
+        "Position the front bumper 3-6 inches from the curb or end of space"
+      ]
+    },
+    {
+      "id": "btw.park-perpendicular-back",
+      "name": "Backing into a perpendicular space",
+      "environment": "moderate_risk",
+      "steps": [
+        "Signal intention and select the space",
+        "Align your vehicle with the farthest line of the third spot up from the space",
+        "Turn the steering wheel all the way in the direction of the space",
+        "Back slowly, continuously checking mirrors for spacing and pedestrians",
+        "Once centered in the space, straighten the wheel and back straight in using reference points"
+      ]
+    },
+    {
+      "id": "btw.park-parallel",
+      "name": "Parallel parking",
+      "environment": "complex",
+      "steps": [
+        "Give the proper signal and stop alongside the vehicle in front, bumpers even",
+        "Shift to reverse and turn your head to see out of the rear window",
+        "Steer hard right while moving slowly backward",
+        "Stop when the back bumper of the front vehicle and the curb are visible in the sideview mirror",
+        "Straighten the wheels and move back until the front bumpers are even",
+        "Steer hard left while moving, then center the vehicle and straighten the wheels"
+      ]
+    },
+    {
+      "id": "btw.passing",
+      "name": "Passing another vehicle",
+      "environment": "complex",
+      "steps": [
+        "Position 2-3 seconds behind the vehicle; check mirrors, blind spot, and oncoming traffic",
+        "Check ahead for safe passing distance and signal intention",
+        "Accelerate into the passing lane to a legal, appropriate speed",
+        "Monitor the path ahead and check the mirror for the passed vehicle's front",
+        "Signal, return to the lane maintaining speed, and cancel the signal"
+      ]
+    },
+    {
+      "id": "btw.expressway-enter",
+      "name": "Entering an expressway",
+      "environment": "complex",
+      "steps": [
+        "Do not enter traffic at the start of the ramp",
+        "Begin the signal",
+        "Adjust speed to traffic flow in the acceleration lane",
+        "Merge when a gap is available"
+      ]
+    },
+    {
+      "id": "btw.expressway-exit",
+      "name": "Exiting an expressway",
+      "environment": "complex",
+      "steps": [
+        "Begin the signal in advance",
+        "Move into the deceleration lane",
+        "Slow down within the deceleration lane, not before it",
+        "Check the posted safe ramp speed"
+      ]
+    },
+    {
+      "id": "btw.u-turn",
+      "name": "U-turn",
+      "environment": "complex",
+      "steps": [
+        "Evaluate risk and select the safest location; check for a no-U-turn sign",
+        "Begin in the left lane closest to the center or median",
+        "Apply left signal and check traffic",
+        "Creep and turn the wheel rapidly to the left",
+        "Complete the turn into the far-right lane of the opposite flow and accelerate to speed"
+      ]
+    },
+    {
+      "id": "btw.brake-failure",
+      "name": "Brake failure",
+      "environment": "emergency",
+      "steps": [
+        "Pump the brake",
+        "Shift to a lower gear",
+        "Slowly apply the parking brake",
+        "Scan for a safe place to roll to a stop"
+      ]
+    },
+    {
+      "id": "btw.engine-failure",
+      "name": "Engine failure",
+      "environment": "emergency",
+      "steps": [
+        "Maintain control of the travel path and steering",
+        "Place the selector carefully in neutral",
+        "Try to restart the engine",
+        "If restart fails, signal and move out of traffic flow",
+        "Scan for a safe place to stop and secure the vehicle"
+      ]
+    },
+    {
+      "id": "btw.accelerator-failure",
+      "name": "Accelerator failure (stuck gas pedal)",
+      "environment": "emergency",
+      "steps": [
+        "Maintain visual and steering control",
+        "Shift to neutral",
+        "Apply the brakes to reduce speed",
+        "Warn other drivers",
+        "Locate a safe stopping zone and pull over"
+      ]
+    },
+    {
+      "id": "btw.off-road-recovery",
+      "name": "Off-road recovery",
+      "environment": "emergency",
+      "steps": [
+        "Keep hands firmly on the wheel at 8 and 4 o'clock",
+        "Ease off the accelerator and allow gradual slowing -- do not brake",
+        "Drop both tires off the roadway and stay off-road to establish maximum control",
+        "Determine a target and path of travel",
+        "With speed under control, turn the wheel toward the target and ease onto the paved surface",
+        "When the front tire is on the roadway, counter-steer to maintain lane position"
+      ]
+    }
+  ],
+  "road_test_automatic_failures": [
+    "Teacher intervention to maintain vehicle control",
+    "Dangerous maneuvers",
+    "Disobeys regulatory sign or signal",
+    "Strikes an object",
+    "Speeding 5 or more mph over the speed limit",
+    "Failure to yield"
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "verified_on": "2026-09-01",
+  "note": "Primary sources consulted while fact-checking this app's questions for 2026. Secondary sources may locate a change but never substantiate one, so none are listed. The driver-improvement course that prompted this project is not a source and is not listed.",
+  "method": {
+    "date": "2026-09-01",
+    "steps": [
+      "Every draft question was triaged by how it could go wrong: dependent on a statutory number, dependent on a named legal doctrine, already broken on its face, or resting on no changeable fact at all.",
+      "Each legal fact was then read from the current statutory text rather than from any summary of it, and its effective date recorded — including the checks that confirmed no change, which are listed among the sources above.",
+      "Where a shipped answer differs from what the source course teaches, both answers are carried and the divergence is explained rather than silently corrected.",
+      "Questions whose defect was structural rather than numeric — logically nested options, two defensible answers, a subject absent from the material — were retired instead of repaired.",
+      "Anything that could not be confirmed from a primary source was left out. The gaps below are recorded rather than filled."
+    ],
+    "sourcing_rule": "Primary sources only for legal facts: the Code of Virginia, the Department of Motor Vehicles, the Department of Transportation, the Department of Education, and the Division of Legislative Services' session summaries. A secondary source may point at a change; it never substantiates one.",
+    "unresolved": [
+      "Knowledge-test and road-skills-test waivers when exchanging a valid out-of-state or foreign licence. No authoritative source found; practice is reported to differ between state exchanges and foreign reciprocity. No question is written on it.",
+      "The substance of four 2026 amendments — to the handheld-device, occupant-restraint, school-bus, and driving-under-the-influence sections. The statutory text as published is reliable and is what the questions rest on; only the attribution of what each amendment changed is open.",
+      "Which provisions of the 2026 photo-enforcement acts carry delayed effective dates. No dated question is written on camera enforcement as a result.",
+      "The penalty amount for transporting a person under 16 in an open pickup bed. The prohibition and its two exceptions are confirmed; the section states no penalty."
+    ]
+  },
+  "groups": [
+    {
+      "publisher": "Code of Virginia",
+      "domain": "law.lis.virginia.gov",
+      "sources": [
+        {
+          "cite": "Va. Code § 4.1-1100 — marijuana possession limits",
+          "url": "https://law.lis.virginia.gov/vacode/title4.1/chapter11/section4.1-1100/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 4.1-1107",
+          "url": "https://law.lis.virginia.gov/vacode/title4.1/chapter11/section4.1-1107/",
+          "effective": "2021-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 16.1-278.9 — Use and Lose",
+          "url": "https://law.lis.virginia.gov/vacode/title16.1/chapter11/section16.1-278.9/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 18.2-266",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266/",
+          "effective": "2005-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 18.2-266.1",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266.1/",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 18.2-268.2",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.2/",
+          "effective": "2005-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 18.2-268.3",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.3/",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 18.2-270 — DUI penalties",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-270/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 18.2-323.1 — alcohol open container",
+          "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-323.1/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 33.2-501",
+          "url": "https://law.lis.virginia.gov/vacode/title33.2/chapter5/section33.2-501/",
+          "effective": "2019-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 38.2-2212(E)",
+          "url": "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2212/",
+          "effective": "2020-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-324.1 — initial licensure for applicants 18 and older",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-324.1/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-334 — minimum licensing age",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-334/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-334.01",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-334.01/",
+          "effective": "2021-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-335",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335/",
+          "effective": "2020-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-335.2",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335.2/",
+          "effective": "2020-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-341.20:7 — marijuana in a commercial vehicle",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-341.20:7/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-472",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-472/",
+          "effective": "2025-01-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-506",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-506/",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-507 — Intelligent Speed Assistance Program",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-507/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-706",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/",
+          "effective": "2024-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-818.2",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.2/",
+          "effective": "2021-01-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-818.3 — live streaming while driving",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.3/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-844",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-844/",
+          "effective": "2021-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-859",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-859/",
+          "effective": "2023-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-861.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-861.1/",
+          "effective": "2023-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-862",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-862/",
+          "effective": "2020-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-865 — racing and exhibition driving",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-865/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-868.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-868.1/",
+          "effective": "2020-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-870 — maximum speed limits",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-870/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-878.1 — speeding in a highway work zone",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-878.1/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-882.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-882.1/",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-921.1 — repealed Move Over section",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-921.1/",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Va. Code § 46.2-1078.1 (repealed)",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1078.1/",
+          "effective": "2021-01-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-1094",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1094/",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-1095",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1095/",
+          "effective": "2019-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-1156.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1156.1/",
+          "effective": "2000-07-01",
+          "cited_by": 1
+        }
+      ]
+    },
+    {
+      "publisher": "Virginia Department of Motor Vehicles",
+      "domain": "dmv.virginia.gov",
+      "sources": [
+        {
+          "cite": "Virginia DMV — all occupants must buckle up (2025 law)",
+          "url": "https://www.dmv.virginia.gov/news/new-virginia-law-requires-all-vehicle-occupants-buckle",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — demerit points, 3-point violations",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/improvement/points/points-3",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — demerit points, drivers under 18",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/improvement/points/under-18",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — insurance requirements",
+          "url": "https://www.dmv.virginia.gov/vehicles/insurance-requirements",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — Intelligent Speed Assistance Program",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/license/reinstate/intelligent-speed-assistance-program-isap",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — learner's permit holding period and driver education FAQs",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/learners/revised-learners-permit-holding-period-and-driver-education-requirements-faqs",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV — license eligibility",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/license/applying/eligibility",
+          "effective": null,
+          "cited_by": 0
+        },
+        {
+          "cite": "Virginia DMV, demerit point system",
+          "url": "https://www.dmv.virginia.gov/licenses-ids/improvement/points/system",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Virginia DMV, new laws effective July 1, 2024",
+          "url": "https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024",
+          "effective": "2024-07-01",
+          "cited_by": 1
+        }
+      ]
+    },
+    {
+      "publisher": "Virginia Department of Transportation",
+      "domain": "vdot.virginia.gov",
+      "sources": [
+        {
+          "cite": "VDOT, 66 Express — using the lanes",
+          "url": "https://www.vdot.virginia.gov/projects/major-projects/66expresslanes/using-the-lanes/",
+          "effective": "2022-12-05",
+          "cited_by": 1
+        },
+        {
+          "cite": "VDOT, HOV lanes",
+          "url": "https://www.vdot.virginia.gov/travel-traffic/commuters/hov/",
+          "effective": "2022-12-05",
+          "cited_by": 2
+        }
+      ]
+    },
+    {
+      "publisher": "Virginia Division of Legislative Services",
+      "domain": "dls.virginia.gov",
+      "sources": [
+        {
+          "cite": "2025 Va. Acts, SB 1416; Division of Legislative Services, In Due Course 2025",
+          "url": "https://dls.virginia.gov/pubs/idc/idc25.pdf",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Division of Legislative Services — In Due Course 2026",
+          "url": "https://dls.virginia.gov/pubs/idc/idc26.pdf",
+          "effective": null,
+          "cited_by": 0
+        }
+      ]
+    },
+    {
+      "publisher": "Virginia Department of Education",
+      "domain": "doe.virginia.gov",
+      "sources": [
+        {
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 3",
+          "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
+          "effective": "2022-07-01",
+          "cited_by": 2
+        }
+      ]
+    }
+  ]
+}

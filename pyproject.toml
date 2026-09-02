@@ -1,0 +1,8 @@
+# Configuration only. This repository is not a Python package -- it is a static
+# web application with helper scripts -- so there is deliberately no build
+# system, no dependencies, and nothing to install from here. Development
+# dependencies live in requirements-dev.txt.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,5 @@
+# Development dependencies only. The application itself ships no Python and no
+# runtime dependencies at all -- it is static files served as-is. Everything
+# here supports the checks in tests/ and the generators in tools/.
+pytest>=8.0
+pyflakes>=3.0
