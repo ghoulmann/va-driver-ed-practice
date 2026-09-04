@@ -1,94 +1,112 @@
-// Item selection: BKT picks the topic, Elo picks the item within it.
+// Item selection: what is due, then what is new, then what is weakest.
 //
-// Topic first, because mastery is what the learner is actually trying to move
-// and what the report is denominated in. Item second, because within a topic
-// the useful question is the one at the edge of what they can do.
+// The schedule (fsrs.js) decides when an item should come back; this module
+// only decides what to show next given that schedule. Three tiers, in order:
+//
+//   1. Reviews that are due, least likely to be recalled first.
+//   2. Items never seen, from the topic with the most room to learn -- so an
+//      untouched topic beats a half-learned one, and a session does not drill
+//      one topic to exhaustion.
+//   3. Reviews not yet due, least likely to be recalled first. A session always
+//      fills to its length, so this tier is what keeps it going once the bank is
+//      caught up; the repeats it produces are the weakest items, spaced by the
+//      schedule rather than by luck.
+//
+// Within one session an item is never asked twice, and neither are two items
+// that share a `concept` -- variants exist so a concept can be re-tested
+// without re-asking a question, not so it can be asked twice in a row.
 
-import * as elo from './elo.js';
-import { isMastered } from './bkt.js';
+import { retrievability, isDue } from './fsrs.js';
 
-// Aim slightly above the learner's rating: informative without being punishing.
-const TARGET_OFFSET = 50;
-// Keep mastered topics in rotation at low weight so retention is checked.
-const MASTERED_WEIGHT = 0.05;
-// How many other items must intervene before an item can repeat.
-const SPACING = { correct: 12, wrong: 4 };
+// A topic just drawn from is damped, so one weak topic does not monopolise.
+const RECENT = 4;
 
 /**
- * @param {object} state    profile state: {topics: {id: {pL}}, items: {id: {rating, exposures, lastSeenAt, lastCorrect}}, rating, responses}
- * @param {Array}  items    the item bank
- * @param {object} opts     {rng, now, topicFilter}
- * @returns {object|null}   the chosen item, or null when nothing is due
+ * @param {object} state  profile state: {items: {id: fsrs record}}
+ * @param {Array}  items  the item bank
+ * @param {object} opts   {rng, now, topicFilter, exclude: [ids asked this session]}
+ * @returns {object|null} the chosen item, or null when nothing remains
  */
 export function nextItem(state, items, opts = {}) {
   const rng = opts.rng || Math.random;
-  const seen = state.responses || 0;
+  const now = opts.now || new Date().toISOString();
+  const askedIds = new Set(opts.exclude || []);
+  const asked = items.filter((it) => askedIds.has(it.id));
+  const askedConcepts = new Set(asked.map((it) => it.concept).filter(Boolean));
 
-  const eligible = items.filter((it) => !isSpaced(state, it, seen));
-  const pool = eligible.length ? eligible : items;
+  const pool = items.filter((it) =>
+    !askedIds.has(it.id)
+    && !(it.concept && askedConcepts.has(it.concept))
+    && (!opts.topicFilter || topicsOf(it).some((t) => opts.topicFilter.includes(t))));
   if (!pool.length) return null;
 
-  const byTopic = groupByTopic(pool, opts.topicFilter);
-  const topics = Object.keys(byTopic);
-  if (!topics.length) return null;
+  const rec = (it) => state.items?.[it.id];
+  const due = pool.filter((it) => isDue(rec(it), now));
+  if (due.length) return weakest(due, rec, now, rng);
 
-  const ordered = topics
-    .map((t) => ({ topic: t, weight: topicWeight(state, t) }))
-    .sort((a, b) => b.weight - a.weight);
+  const fresh = pool.filter((it) => !rec(it)?.reps);
+  if (fresh.length) return pickNew(state, items, fresh, asked, rng, now);
 
-  const chosen = weightedPick(ordered, rng) || ordered[0];
-  return pickWithinTopic(state, byTopic[chosen.topic], rng);
+  return weakest(pool, rec, now, rng);
 }
 
-/** Weight a topic by how much room it has left to learn. */
-export function topicWeight(state, topicId) {
-  const pL = state.topics?.[topicId]?.pL ?? 0.15;
-  if (isMastered(pL)) return MASTERED_WEIGHT;
-  // Recency penalty: a topic just drawn from is damped, so one weak topic does
-  // not monopolise a session.
-  const recent = state.recentTopics || [];
-  const idx = recent.indexOf(topicId);
-  const damp = idx === -1 ? 1 : 0.35 + 0.65 * (idx / recent.length);
-  return Math.max(0.01, (1 - pL) * damp);
+/** Lowest retrievability first; near-ties broken randomly so sessions differ. */
+function weakest(candidates, rec, now, rng) {
+  const scored = candidates.map((it) => ({ it, r: retrievability(rec(it), now) }));
+  const min = Math.min(...scored.map((s) => s.r));
+  const ties = scored.filter((s) => s.r - min < 0.02);
+  return ties[Math.floor(rng() * ties.length)].it;
 }
 
-function pickWithinTopic(state, pool, rng) {
-  const learner = state.rating ?? elo.START;
-  const target = learner + TARGET_OFFSET;
-  let best = null;
-  let bestGap = Infinity;
-  for (const item of pool) {
-    const rating = state.items?.[item.id]?.rating ?? item.difficulty0 ?? elo.START;
-    // Unseen items win ties -- new ground beats a re-ask at the same difficulty.
-    const unseen = state.items?.[item.id] ? 0 : -1;
-    const gap = Math.abs(rating - target) + unseen;
-    if (gap < bestGap) {
-      best = item;
-      bestGap = gap;
+function pickNew(state, items, fresh, asked, rng, now) {
+  const mastery = topicMastery(state, items, now);
+  const recent = asked.slice(-RECENT).flatMap(topicsOf);
+  const byTopic = {};
+  for (const it of fresh) {
+    for (const topic of topicsOf(it)) (byTopic[topic] ||= []).push(it);
+  }
+  const weighted = Object.keys(byTopic).map((topic) => ({
+    topic,
+    weight: topicWeight(mastery[topic]?.mastery ?? 0, recent.indexOf(topic)),
+  }));
+  const chosen = weightedPick(weighted, rng);
+  const candidates = byTopic[chosen.topic];
+  // A concept the learner has never met beats a variant of one they have.
+  const byId = new Map(items.map((it) => [it.id, it]));
+  const known = new Set(Object.keys(state.items || {})
+    .map((id) => byId.get(id)?.concept).filter(Boolean));
+  const unknown = candidates.filter((it) => !it.concept || !known.has(it.concept));
+  const from = unknown.length ? unknown : candidates;
+  return from[Math.floor(rng() * from.length)];
+}
+
+/** Room left to learn, damped when the topic was just drawn from. */
+export function topicWeight(mastery, recentIdx) {
+  const damp = recentIdx === -1 ? 1 : 0.35 + 0.65 * (recentIdx / RECENT);
+  return Math.max(0.01, (1 - mastery) * damp);
+}
+
+/**
+ * Predicted recall per topic, averaged over the bank's items for that topic.
+ * An unseen item counts as zero, so a topic the bank barely covers reads thin
+ * rather than mastered after one lucky answer.
+ * @returns {Object<string, {mastery: number, n: number, seen: number}>}
+ */
+export function topicMastery(state, items, now = new Date().toISOString()) {
+  const out = {};
+  for (const it of items) {
+    const rec = state.items?.[it.id];
+    const r = rec?.reps ? retrievability(rec, now) : 0;
+    for (const topic of topicsOf(it)) {
+      const t = (out[topic] ||= { sum: 0, n: 0, seen: 0 });
+      t.sum += r;
+      t.n += 1;
+      t.seen += rec?.reps ? 1 : 0;
     }
   }
-  // Break a cluster of near-equal candidates randomly so sessions differ.
-  const ties = pool.filter((item) => {
-    const rating = state.items?.[item.id]?.rating ?? item.difficulty0 ?? elo.START;
-    return Math.abs(Math.abs(rating - target) - bestGap) < 25;
-  });
-  return ties.length > 1 ? ties[Math.floor(rng() * ties.length)] : best;
-}
-
-function isSpaced(state, item, seen) {
-  const rec = state.items?.[item.id];
-  if (!rec || rec.lastSeenAt == null) return false;
-  const window = rec.lastCorrect ? SPACING.correct : SPACING.wrong;
-  return seen - rec.lastSeenAt < window;
-}
-
-function groupByTopic(items, topicFilter) {
-  const out = {};
-  for (const item of items) {
-    for (const topic of topicsOf(item)) {
-      if (topicFilter && !topicFilter.includes(topic)) continue;
-      (out[topic] ||= []).push(item);
-    }
+  for (const t of Object.values(out)) {
+    t.mastery = t.n ? t.sum / t.n : 0;
+    delete t.sum;
   }
   return out;
 }
@@ -100,7 +118,6 @@ export function topicsOf(item) {
 
 function weightedPick(weighted, rng) {
   const total = weighted.reduce((sum, w) => sum + w.weight, 0);
-  if (total <= 0) return null;
   let r = rng() * total;
   for (const w of weighted) {
     r -= w.weight;
@@ -109,4 +126,4 @@ function weightedPick(weighted, rng) {
   return weighted[weighted.length - 1];
 }
 
-export const _internals = { SPACING, TARGET_OFFSET, MASTERED_WEIGHT };
+export const _internals = { RECENT };

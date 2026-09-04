@@ -22,7 +22,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 APP = ROOT
 OUT = ROOT / "dist" / "artifact.html"
 
-MODULES = ["bkt", "elo", "select", "session", "store", "credits", "ui"]
+MODULES = ["fsrs", "select", "session", "store", "credits", "ui"]
 DATA = ["items", "taxonomy", "resources"]
 
 FONTS = ("https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700"

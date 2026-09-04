@@ -7,6 +7,8 @@
 // Every read and write is wrapped -- private windows, cleared site data, and
 // browsers set to block storage all make these throw rather than return null.
 
+import * as fsrs from './fsrs.js';
+
 const PREFIX = 'nova-study:v1:';
 const INDEX = `${PREFIX}profiles`;
 const ACTIVE = `${PREFIX}active`;
@@ -29,17 +31,50 @@ function write(key, value) {
   }
 }
 
+// Bumped when the shape of a profile changes; `migrate` brings older ones up.
+export const STATE_VERSION = 2;
+
 export function emptyState(name) {
   return {
+    version: STATE_VERSION,
     name,
     created: new Date().toISOString(),
-    rating: 1200,
     responses: 0,
-    topics: {},        // topicId -> {pL}
-    items: {},         // itemId  -> {rating, exposures, lastSeenAt, lastCorrect, correct, wrong}
-    recentTopics: [],
+    items: {},         // itemId -> fsrs record (see js/fsrs.js newRecord)
     history: [],       // one entry per completed session
+    settings: { experiment: true },  // include items sourced beyond the course
   };
+}
+
+/**
+ * Bring a stored profile up to the current shape. Returns the same object when
+ * nothing needed doing, so callers can save only on change.
+ *
+ * v1 -> v2: the rating model kept `{rating, exposures, lastSeenAt, lastCorrect}`
+ * per item and a mastery probability per topic. The schedule keeps a memory
+ * state per item instead. Each answered item is replayed as one review -- Good
+ * if the last answer was right, Again if not -- and made due now, so the first
+ * session after the upgrade re-checks what the learner had seen rather than
+ * pretending to know how well they remember it. Topic state is derived, not
+ * stored, so it is simply dropped.
+ */
+export function migrate(state, now = new Date().toISOString()) {
+  if (!state || typeof state !== 'object') return state;
+  if ((state.version || 1) >= STATE_VERSION) return state;
+
+  const items = {};
+  for (const [id, rec] of Object.entries(state.items || {})) {
+    if (!rec || !rec.exposures) continue;
+    const grade = rec.lastCorrect ? fsrs.GOOD : fsrs.AGAIN;
+    items[id] = {
+      ...fsrs.review(null, grade, now),
+      due: now,
+      correct: rec.correct ?? (rec.lastCorrect ? 1 : 0),
+      wrong: rec.wrong ?? (rec.lastCorrect ? 0 : 1),
+    };
+  }
+  const { rating, topics, recentTopics, ...rest } = state;
+  return { ...emptyState(state.name), ...rest, version: STATE_VERSION, items };
 }
 
 export function listProfiles() {
@@ -68,7 +103,10 @@ export function createProfile(name) {
 }
 
 export function load(id) {
-  return read(PREFIX + id, null);
+  const stored = read(PREFIX + id, null);
+  const state = migrate(stored);
+  if (state && state !== stored) save(id, state);
+  return state;
 }
 
 export function save(id, state) {
@@ -105,16 +143,16 @@ export function available() {
 export function exportProfile(id) {
   const state = load(id);
   if (!state) return null;
-  return JSON.stringify({ format: 'nova-study-profile', version: 1, state }, null, 2);
+  return JSON.stringify({ format: 'nova-study-profile', version: STATE_VERSION, state }, null, 2);
 }
 
 export function importProfile(json) {
   const parsed = JSON.parse(json);
   const state = parsed.format === 'nova-study-profile' ? parsed.state : parsed;
-  if (!state || typeof state !== 'object' || !state.topics || !state.items) {
+  if (!state || typeof state !== 'object' || !state.items) {
     throw new Error('Not a nova-study profile export.');
   }
   const id = createProfile(state.name || 'Imported');
-  save(id, { ...emptyState(state.name || 'Imported'), ...state });
+  save(id, migrate({ ...emptyState(state.name || 'Imported'), ...state, version: state.version || 1 }));
   return id;
 }

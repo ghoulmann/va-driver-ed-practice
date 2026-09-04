@@ -8,7 +8,7 @@ import { creditsHTML } from './credits.js';
 
 const app = document.getElementById('app');
 const state = {
-  items: [], taxonomy: null, resources: null, ipHtml: '',
+  bank: [], items: [], taxonomy: null, resources: null, ipHtml: '',
   profileId: null, profile: null, session: null, view: 'home',
 };
 
@@ -36,7 +36,7 @@ async function init() {
       loadJSON('resources').catch(() => null),
       loadText('credits.ip.html', 'ipHtml').catch(() => ''),
     ]);
-    state.items = items.filter(shippable);
+    state.bank = items.filter(shippable);
     state.taxonomy = taxonomy;
     state.resources = resources;
     state.ipHtml = ipHtml;
@@ -50,6 +50,7 @@ async function init() {
 
   state.profileId = store.activeProfile() || store.createProfile('Me');
   state.profile = store.load(state.profileId) || store.emptyState('Me');
+  refilter();
 
   document.querySelectorAll('nav [data-view]').forEach((btn) => {
     btn.addEventListener('click', () => go(btn.dataset.view));
@@ -60,6 +61,26 @@ async function init() {
 /** Only reviewed + verified questions reach a learner. See CONTRIBUTING.md. */
 function shippable(item) {
   return item.status === 'reviewed' && item.accuracy?.status === 'verified';
+}
+
+/** The learner's pool: the shipped bank, minus what their settings exclude. */
+function refilter() {
+  const include = state.profile?.settings?.experiment !== false;
+  state.items = state.bank.filter((item) => include || item.source?.kind !== 'experiment');
+}
+
+// Items authored from the Commonwealth's own sources rather than from the
+// course. They are inside the curriculum; the tag says where they came from.
+const CHANNELS = {
+  manual: 'Virginia Driver\'s Manual',
+  code: 'Code of Virginia',
+  sol: 'VDOE curriculum',
+};
+
+function sourceTag(item) {
+  if (item.source?.kind !== 'experiment') return '';
+  const label = CHANNELS[item.source.channel] || 'Beyond the course';
+  return ` · <span class="tag">${escape(label)}</span>`;
 }
 
 function go(view) {
@@ -89,6 +110,8 @@ function render() {
 function renderHome() {
   const pass = sessionLib.passProbability(state.profile, state.items);
   const answered = state.profile.responses || 0;
+  const touched = sessionLib.masteryReport(state.profile, state.items, state.taxonomy)
+    .filter((t) => t.seen > 0).length;
   const storageWarning = store.available() ? '' : `<div class="warn-banner">
     <strong>Storage is unavailable in this browser.</strong> Your progress will not be saved
     between visits — private browsing and blocked site data both cause this.</div>`;
@@ -100,7 +123,7 @@ function renderHome() {
       <p class="headline">${(pass * 100).toFixed(0)}%</p>
       <p class="muted small">Ten questions drawn, three misses tolerated. Based on
         ${answered} answer${answered === 1 ? '' : 's'} so far across
-        ${Object.keys(state.profile.topics || {}).length} topic(s). Treat it as a readiness
+        ${touched} topic(s). Treat it as a readiness
         indicator, not a forecast.</p>
       <div class="actions">
         <button class="primary" id="start">Start a 10-question session</button>
@@ -117,8 +140,8 @@ function renderHome() {
 
   document.getElementById('start').onclick = () => beginSession(null);
   document.getElementById('start-weak').onclick = () => {
-    const weakest = sessionLib.masteryReport(state.profile, state.taxonomy)
-      .filter((t) => state.items.some((i) => topicsOf(i).includes(t.id)))[0];
+    const weakest = sessionLib.masteryReport(state.profile, state.items, state.taxonomy)
+      .filter((t) => t.n > 0)[0];
     beginSession(weakest ? [weakest.id] : null);
   };
 }
@@ -135,9 +158,9 @@ function beginSession(topicFilter) {
   state.session = sessionLib.start(state.profile, state.items, { topicFilter });
   if (!state.session.current) {
     state.session = null;
-    app.innerHTML = `<div class="card"><h2>Nothing due</h2>
-      <p class="muted">Every item in that topic was answered recently. Come back after a break,
-      or run a full session.</p></div>`;
+    app.innerHTML = `<div class="card"><h2>Nothing to ask</h2>
+      <p class="muted">The bank has no questions for that selection. Run a full session
+      instead.</p></div>`;
     return;
   }
   go('home');
@@ -151,7 +174,7 @@ function renderSession() {
 
   const item = s.current;
   const n = s.responses.length + 1;
-  const head = `<p class="progress">Question ${n} of ${s.length} · ${topicsOf(item).join(', ')}</p>
+  const head = `<p class="progress">Question ${n} of ${s.length} · ${topicsOf(item).join(', ')}${sourceTag(item)}</p>
                 <p class="stem">${escape(item.stem)}</p>`;
 
   if (item.form === 'ordering') return renderOrdering(item, head);
@@ -325,22 +348,23 @@ function renderResults() {
 // ------------------------------------------------------------- mastery
 
 function renderMastery() {
-  const covered = new Set(state.items.flatMap(topicsOf));
-  const rows = sessionLib.masteryReport(state.profile, state.taxonomy)
-    .filter((t) => covered.has(t.id));
+  const rows = sessionLib.masteryReport(state.profile, state.items, state.taxonomy)
+    .filter((t) => t.n > 0);
 
   app.innerHTML = `<section class="card">
     <h2>Mastery by Standard of Learning</h2>
-    <p class="muted small">Weakest first. Topics with no items in the bank yet are hidden —
-      see <code>backlog.md</code> for what is still to be authored.</p>
+    <p class="muted small">Weakest first: the chance you would recall each topic's questions
+      right now, with questions you have not met counted as unknown. The fraction is how many
+      of the bank's questions on that topic you have seen — a thin topic caps low however well
+      you know it. Topics with no items in the bank yet are hidden.</p>
     <ul class="bars">${rows.map((t) => `
       <li class="bar-row">
         <code>${t.id}</code>
         <span>
           <span class="topic-name">${escape(t.statement)}</span>
-          <span class="bar"><span style="width:${(t.pL * 100).toFixed(0)}%"></span></span>
+          <span class="bar"><span style="width:${(t.mastery * 100).toFixed(0)}%"></span></span>
         </span>
-        <span class="pct">${(t.pL * 100).toFixed(0)}%</span>
+        <span class="pct">${(t.mastery * 100).toFixed(0)}% <span class="seen">${t.seen}/${t.n}</span></span>
       </li>`).join('')}
     </ul>
   </section>`;
@@ -369,6 +393,13 @@ function renderSettings() {
       </div>
     </section>
     <section class="card">
+      <h2>Questions</h2>
+      <label class="check"><input type="checkbox" id="experiment"
+        ${state.profile.settings?.experiment !== false ? 'checked' : ''}>
+        Include questions drawn from the Virginia Driver's Manual, the Code of Virginia and the
+        VDOE curriculum, not only the course's topics</label>
+    </section>
+    <section class="card">
       <h2>Backup</h2>
       <p class="muted small">Progress lives only in this browser. Copy this out to keep it, or
         paste an export in to restore it on another device.</p>
@@ -382,6 +413,7 @@ function renderSettings() {
     store.setActive(e.target.value);
     state.profileId = e.target.value;
     state.profile = store.load(state.profileId);
+    refilter();
     go('home');
   };
   document.getElementById('new-profile').onclick = () => {
@@ -389,12 +421,19 @@ function renderSettings() {
     if (!name) return;
     state.profileId = store.createProfile(name);
     state.profile = store.load(state.profileId);
+    refilter();
     go('home');
+  };
+  document.getElementById('experiment').onchange = (e) => {
+    state.profile.settings = { ...(state.profile.settings || {}), experiment: e.target.checked };
+    persist();
+    refilter();
   };
   document.getElementById('reset').onclick = () => {
     if (!confirm('Erase all progress for this profile?')) return;
     state.profile = store.emptyState(state.profile.name);
     persist();
+    refilter();
     go('home');
   };
   document.getElementById('import').onclick = () => {
@@ -403,6 +442,7 @@ function renderSettings() {
     try {
       state.profileId = store.importProfile(json);
       state.profile = store.load(state.profileId);
+      refilter();
       go('home');
     } catch (err) {
       alert(`That did not import: ${err.message}`);
