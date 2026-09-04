@@ -34,6 +34,18 @@
           "cite": "Va. Code § 4.1-1107",
           "url": "https://law.lis.virginia.gov/vacode/title4.1/chapter11/section4.1-1107/",
           "effective": "2021-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 10.1-1425.1",
+          "url": "https://law.lis.virginia.gov/vacode/title10.1/chapter14/section10.1-1425.1/",
+          "effective": "1990-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 10.1-1425.2",
+          "url": "https://law.lis.virginia.gov/vacode/title10.1/chapter14/section10.1-1425.2/",
+          "effective": "1990-07-01",
           "cited_by": 1
         },
         {
@@ -46,31 +58,31 @@
           "cite": "Va. Code § 18.2-266",
           "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266/",
           "effective": "2005-07-01",
-          "cited_by": 2
+          "cited_by": 5
         },
         {
           "cite": "Va. Code § 18.2-266.1",
           "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-266.1/",
           "effective": "2026-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 18.2-268.2",
           "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.2/",
           "effective": "2005-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 18.2-268.3",
           "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-268.3/",
           "effective": "2026-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
-          "cite": "Va. Code § 18.2-270 — DUI penalties",
+          "cite": "Va. Code § 18.2-270",
           "url": "https://law.lis.virginia.gov/vacode/title18.2/chapter7/section18.2-270/",
-          "effective": null,
-          "cited_by": 0
+          "effective": "2014-07-01",
+          "cited_by": 1
         },
         {
           "cite": "Va. Code § 18.2-323.1 — alcohol open container",
@@ -79,15 +91,45 @@
           "cited_by": 0
         },
         {
+          "cite": "Va. Code § 32.1-291.4",
+          "url": "https://law.lis.virginia.gov/vacode/title32.1/chapter8/section32.1-291.4/",
+          "effective": "2007-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 32.1-291.8",
+          "url": "https://law.lis.virginia.gov/vacode/title32.1/chapter8/section32.1-291.8/",
+          "effective": "2007-07-01",
+          "cited_by": 2
+        },
+        {
           "cite": "Va. Code § 33.2-501",
           "url": "https://law.lis.virginia.gov/vacode/title33.2/chapter5/section33.2-501/",
           "effective": "2019-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 38.2-2212(E)",
           "url": "https://law.lis.virginia.gov/vacode/title38.2/chapter22/section38.2-2212/",
           "effective": "2020-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-203.3",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter2/section46.2-203.3/",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-308",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-308/",
+          "effective": "2002-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-322",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-322/",
+          "effective": "2024-07-01",
           "cited_by": 1
         },
         {
@@ -106,19 +148,19 @@
           "cite": "Va. Code § 46.2-334.01",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-334.01/",
           "effective": "2021-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-335",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335/",
           "effective": "2020-07-01",
-          "cited_by": 2
+          "cited_by": 4
         },
         {
           "cite": "Va. Code § 46.2-335.2",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-335.2/",
           "effective": "2020-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-341.20:7 — marijuana in a commercial vehicle",
@@ -130,13 +172,13 @@
           "cite": "Va. Code § 46.2-472",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-472/",
           "effective": "2025-01-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-506",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter3/section46.2-506/",
           "effective": "2026-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-507 — Intelligent Speed Assistance Program",
@@ -145,46 +187,130 @@
           "cited_by": 0
         },
         {
+          "cite": "Va. Code § 46.2-600",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-600/",
+          "effective": "2016-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-656",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-656/",
+          "effective": "1989-07-01",
+          "cited_by": 1
+        },
+        {
           "cite": "Va. Code § 46.2-706",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-706/",
           "effective": "2024-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-772",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-772/",
+          "effective": "2023-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-804",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-804/",
+          "effective": "2017-07-01",
           "cited_by": 1
         },
         {
           "cite": "Va. Code § 46.2-818.2",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.2/",
           "effective": "2021-01-01",
-          "cited_by": 2
+          "cited_by": 5
         },
         {
-          "cite": "Va. Code § 46.2-818.3 — live streaming while driving",
+          "cite": "Va. Code § 46.2-818.3",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-818.3/",
-          "effective": null,
-          "cited_by": 0
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-820",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-820/",
+          "effective": "1989-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-825",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-825/",
+          "effective": "1989-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-828",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-828/",
+          "effective": "2012-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-828.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-828.1/",
+          "effective": "2000-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-833",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-833/",
+          "effective": "2013-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-839",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-839/",
+          "effective": "2021-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-842.1",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-842.1/",
+          "effective": "2020-07-01",
+          "cited_by": 1
         },
         {
           "cite": "Va. Code § 46.2-844",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-844/",
           "effective": "2021-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-848",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-848/",
+          "effective": "1989-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-849",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-849/",
+          "effective": "2019-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-854",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-854/",
+          "effective": "1989-07-01",
           "cited_by": 1
         },
         {
           "cite": "Va. Code § 46.2-859",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-859/",
           "effective": "2023-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-861.1",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-861.1/",
           "effective": "2023-07-01",
-          "cited_by": 2
+          "cited_by": 4
         },
         {
           "cite": "Va. Code § 46.2-862",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-862/",
           "effective": "2020-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-865 — racing and exhibition driving",
@@ -196,7 +322,7 @@
           "cite": "Va. Code § 46.2-868.1",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-868.1/",
           "effective": "2020-07-01",
-          "cited_by": 1
+          "cited_by": 4
         },
         {
           "cite": "Va. Code § 46.2-870 — maximum speed limits",
@@ -211,9 +337,21 @@
           "cited_by": 0
         },
         {
+          "cite": "Va. Code § 46.2-880",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-880/",
+          "effective": "2003-07-01",
+          "cited_by": 1
+        },
+        {
           "cite": "Va. Code § 46.2-882.1",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-882.1/",
           "effective": "2026-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-885",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-885/",
+          "effective": "2012-07-01",
           "cited_by": 1
         },
         {
@@ -223,27 +361,87 @@
           "cited_by": 0
         },
         {
+          "cite": "Va. Code § 46.2-924",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-924/",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-936",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-936/",
+          "effective": "2021-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-937",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter8/section46.2-937/",
+          "effective": "1989-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-1030",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1030/",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
           "cite": "Va. Code § 46.2-1078.1 (repealed)",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1078.1/",
           "effective": "2021-01-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-1094",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1094/",
           "effective": "2025-07-01",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "Va. Code § 46.2-1095",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1095/",
           "effective": "2019-07-01",
-          "cited_by": 1
+          "cited_by": 3
         },
         {
           "cite": "Va. Code § 46.2-1156.1",
           "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1156.1/",
           "effective": "2000-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-1157",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1157/",
+          "effective": "2021-03-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-1158",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1158/",
+          "effective": "2020-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 46.2-1177",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1177/",
+          "effective": "2015-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Va. Code § 46.2-1178",
+          "url": "https://law.lis.virginia.gov/vacode/title46.2/chapter10/section46.2-1178/",
+          "effective": "2013-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Va. Code § 58.1-2402",
+          "url": "https://law.lis.virginia.gov/vacode/title58.1/chapter24/section58.1-2402/",
+          "effective": "2019-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "19VAC30-70, Motor Vehicle Safety Inspection Regulations",
+          "url": "https://law.lis.virginia.gov/admincode/title19/agency30/chapter70/",
+          "effective": "2024-02-01",
           "cited_by": 1
         }
       ]
@@ -295,16 +493,52 @@
           "cited_by": 0
         },
         {
+          "cite": "Virginia DMV, Blue Envelope Program",
+          "url": "https://www.dmv.virginia.gov/BlueEnvelope",
+          "effective": "2025-07-01",
+          "cited_by": 1
+        },
+        {
           "cite": "Virginia DMV, demerit point system",
           "url": "https://www.dmv.virginia.gov/licenses-ids/improvement/points/system",
           "effective": "2026-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Virginia DMV, Emissions Inspections",
+          "url": "https://www.dmv.virginia.gov/vehicles/registration/emissions",
+          "effective": "2013-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Virginia DMV, Motor Vehicle Sales and Use Tax",
+          "url": "https://www.dmv.virginia.gov/vehicles/taxes-fees/sut",
+          "effective": "2016-07-01",
           "cited_by": 1
         },
         {
           "cite": "Virginia DMV, new laws effective July 1, 2024",
           "url": "https://www.dmv.virginia.gov/news/new-laws-take-effect-today-july-1-2024",
           "effective": "2024-07-01",
+          "cited_by": 2
+        },
+        {
+          "cite": "Virginia DMV, New to Virginia",
+          "url": "https://www.dmv.virginia.gov/moving/new-virginia",
+          "effective": "2016-07-01",
           "cited_by": 1
+        },
+        {
+          "cite": "Virginia DMV, What is the Highway Use Fee?",
+          "url": "https://www.dmv.virginia.gov/vehicles/taxes-fees/highway-use",
+          "effective": "2026-07-01",
+          "cited_by": 1
+        },
+        {
+          "cite": "Virginia Driver's Manual (April 2026), Section 7, p. 34 (Organ, Eye and Tissue Donation)",
+          "url": "https://www.dmv.virginia.gov/sites/default/files/forms/dmv39.pdf",
+          "effective": "2026-04-27",
+          "cited_by": 36
         }
       ]
     },
@@ -316,13 +550,19 @@
           "cite": "VDOT, 66 Express — using the lanes",
           "url": "https://www.vdot.virginia.gov/projects/major-projects/66expresslanes/using-the-lanes/",
           "effective": "2022-12-05",
-          "cited_by": 1
+          "cited_by": 2
         },
         {
           "cite": "VDOT, HOV lanes",
           "url": "https://www.vdot.virginia.gov/travel-traffic/commuters/hov/",
           "effective": "2022-12-05",
-          "cited_by": 2
+          "cited_by": 4
+        },
+        {
+          "cite": "VDOT, Travel and traffic (511 Virginia)",
+          "url": "https://www.vdot.virginia.gov/travel-traffic/",
+          "effective": "2026-05-29",
+          "cited_by": 1
         }
       ]
     },
@@ -334,7 +574,7 @@
           "cite": "2025 Va. Acts, SB 1416; Division of Legislative Services, In Due Course 2025",
           "url": "https://dls.virginia.gov/pubs/idc/idc25.pdf",
           "effective": "2025-07-01",
-          "cited_by": 1
+          "cited_by": 3
         },
         {
           "cite": "Division of Legislative Services — In Due Course 2026",
@@ -352,7 +592,7 @@
           "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 3",
           "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
           "effective": "2022-07-01",
-          "cited_by": 2
+          "cited_by": 6
         }
       ]
     }
