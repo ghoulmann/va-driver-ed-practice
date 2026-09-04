@@ -339,6 +339,13 @@ CORRECTIONS = [
         "concept": "de5c-following-seconds-at-highway-speed",
         "key": r"\b4 seconds\b",
     },
+    {   # Module 13 p. 34 picks the target before any steering, and its
+        # "drop both tires off" bullet is a state, not a step: an ordering
+        # item cannot rest on where an unnumbered bullet sits
+        "concept": "de17c-off-road-recovery",
+        "before": (r"\b(target|point|spot)\b", r"\b(steer|turn the wheel)\b"),
+        "never_step": r"\b(both|two) (right )?(tires|wheels)\b",
+    },
 ]
 
 
@@ -348,6 +355,15 @@ def test_a_corrected_fault_stays_corrected(shipped, rule):
     assert matching, f"no shipped item on {rule['concept']}; drop the rule or restore the item"
     for item in matching:
         if item.get("form") == "ordering":
+            keyed = [item["steps"][k]["text"] for k in item["answerOrder"]]
+            if "before" in rule:
+                first, second = rule["before"]
+                a = next(i for i, t in enumerate(keyed) if re.search(first, t, re.I))
+                b = next(i for i, t in enumerate(keyed) if re.search(second, t, re.I))
+                assert a < b, f"{item['id']}: {keyed[b]!r} is keyed before {keyed[a]!r}"
+            if "never_step" in rule:
+                hit = [t for t in keyed if re.search(rule["never_step"], t, re.I)]
+                assert not hit, f"{item['id']}: reintroduces step {hit[0]!r}"
             continue
         key = next(o for o in item["options"] if o["id"] == item["answer"])
         prose = item.get("explanation", "") + " " + key.get("rationale", "")

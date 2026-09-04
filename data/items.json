@@ -1423,16 +1423,16 @@
         "why": "Speed comes down by coasting. Braking with two wheels on gravel and two on asphalt gives the two sides different grip and drags the car sideways."
       },
       {
-        "text": "Drop both tires fully off the roadway to establish maximum control",
-        "why": "A tire half on the pavement edge is a tire waiting to catch. With both right tires fully on the shoulder the car is on one surface and stable enough to steer."
-      },
-      {
         "text": "Determine a target and path of travel back onto the pavement",
         "why": "Choose where you will come back on, a point where the edge is low and the road ahead is clear, before you steer, so the steering has an aim."
       },
       {
-        "text": "With speed under control, steer toward the target and ease onto the paved surface",
-        "why": "Only once speed is under control: turn the wheel enough to climb the edge and ease back on. Doing this while still fast is how the car ends up across the center line."
+        "text": "With speed under control, turn the wheel toward the target",
+        "why": "Only once speed is under control: enough steering to aim at the return point, no more. Turning while still fast is how the car ends up across the center line."
+      },
+      {
+        "text": "Ease the vehicle onto the paved surface",
+        "why": "Climb the edge gently. A gradual return lets the tires take the lip one at a time instead of the whole car lurching back onto the road."
       },
       {
         "text": "Counter-steer as the front tire regains the roadway to hold lane position",
@@ -1449,21 +1449,22 @@
     ],
     "answer": null,
     "options": [],
-    "explanation": "The instinct to brake and steer back immediately is what turns a shoulder drop into a rollover or a head-on. VDOE's sequence removes speed first without braking, commits fully to the shoulder rather than fighting the edge, and only then steers back — with a counter-steer ready, because the tire regaining pavement grips suddenly.",
+    "explanation": "The instinct to brake and steer back immediately is what turns a shoulder drop into a rollover or a head-on. VDOE's sequence removes speed first without braking, picks the return point before touching the wheel, steers toward it only once speed is under control, eases over the edge rather than lurching, and finishes with a counter-steer, because the tire regaining pavement grips suddenly.",
     "source": {
       "kind": "reauthored",
       "basis": "VDOE Module 13, Key Concepts for Lesson 6"
     },
     "accuracy": {
       "status": "verified",
-      "verified_on": "2026-09-01",
+      "verified_on": "2026-09-04",
       "authority": [
         {
-          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6",
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6 (Off Road Recovery, p. 34)",
           "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
           "effective": "2022-07-01"
         }
-      ]
+      ],
+      "note": "Keyed to the guide's own bullet order on p. 34: hands firm, ease off the accelerator, do not brake, determine target and path of travel, with speed under control turn toward target, ease onto the paved surface, counter-steer. The guide's 'drop both tires off roadway' bullet is a vehicle state rather than a step and sits between target and steering in a list that is not numbered, so it is not a step here."
     },
     "status": "reviewed"
   },
@@ -5856,16 +5857,16 @@
         "why": "Speed comes off by coasting. Braking with two wheels on gravel and two on asphalt gives each side different grip and can swing the car sideways."
       },
       {
-        "text": "Let both right tires come fully off the pavement so the car is on one surface",
-        "why": "A tire riding the edge of the pavement is waiting to catch. With both right wheels fully on the shoulder the car is stable enough to steer."
-      },
-      {
         "text": "Pick a point ahead where you will return to the pavement",
         "why": "Choose a spot where the edge is low and the road is clear before you steer, so the steering has somewhere to aim."
       },
       {
-        "text": "With speed under control, steer gently toward that point and ease back onto the road",
-        "why": "Only after slowing: turn the wheel enough to climb the edge and ease on. Doing this while still fast is how a car ends up across the center line."
+        "text": "Once you have slowed, turn the wheel gently toward that point",
+        "why": "Only after slowing, and only enough to aim at the return point. Turning hard or early is how a car ends up across the center line."
+      },
+      {
+        "text": "Ease the car back up onto the road",
+        "why": "Take the pavement edge gradually so the tires climb it one at a time rather than the car bouncing back on all at once."
       },
       {
         "text": "Counter-steer as the front tire regains the pavement to stay in your lane",
@@ -5882,7 +5883,7 @@
     ],
     "answer": null,
     "options": [],
-    "explanation": "The instinctive reaction — brake hard and yank the wheel back — is what turns a dropped wheel into a rollover or a head-on. VDOE's sequence takes speed off first without braking, commits fully to the shoulder instead of fighting the pavement edge, picks a return point, and only then steers back gently, with a counter-steer ready because the tire grabs suddenly when it climbs back onto the road.",
+    "explanation": "The instinctive reaction — brake hard and yank the wheel back — is what turns a dropped wheel into a rollover or a head-on. VDOE's sequence takes speed off first without braking, picks a return point before any steering, turns gently toward it once slowed, eases back over the edge, and keeps a counter-steer ready because the tire grabs suddenly when it climbs back onto the road.",
     "source": {
       "kind": "reauthored",
       "basis": "VDOE Module 13, Key Concepts for Lesson 6"
@@ -5892,11 +5893,12 @@
       "verified_on": "2026-09-04",
       "authority": [
         {
-          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6",
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6 (Off Road Recovery, p. 34)",
           "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
           "effective": "2022-07-01"
         }
-      ]
+      ],
+      "note": "Keyed to the guide's own bullet order on p. 34: hands firm, ease off the accelerator, do not brake, determine target and path of travel, with speed under control turn toward target, ease onto the paved surface, counter-steer. The guide's 'drop both tires off roadway' bullet is a vehicle state rather than a step and sits between target and steering in a list that is not numbered, so it is not a step here."
     },
     "status": "reviewed"
   },
@@ -5921,16 +5923,16 @@
         "why": "Let the car slow by itself. Braking with unequal grip under the left and right wheels drags the car toward the softer side."
       },
       {
-        "text": "Put both right tires completely onto the shoulder",
-        "why": "Half-on, half-off is the unstable position. Fully on the shoulder, the car rides one surface and can be steered predictably."
-      },
-      {
         "text": "Choose your target — the spot where you will rejoin the pavement",
         "why": "Decide where you are going before you turn the wheel: a low edge and a clear road ahead."
       },
       {
-        "text": "Once you have slowed, steer smoothly toward the target and climb back onto the road",
-        "why": "The return waits for the speed to come down. A gentle steering input lifts the tires over the edge without overshooting."
+        "text": "With the speed down, steer smoothly toward the target",
+        "why": "The return waits for the speed to come down, and the steering input stays small — just enough to point the car at the spot you chose."
+      },
+      {
+        "text": "Climb gently back onto the pavement",
+        "why": "Ease over the edge rather than lurching across it, so the tires take the lip one at a time and the car stays settled."
       },
       {
         "text": "Apply a quick counter-steer as the front wheel bites the pavement, holding your lane",
@@ -5947,7 +5949,7 @@
     ],
     "answer": null,
     "options": [],
-    "explanation": "The instinctive reaction — brake hard and yank the wheel back — is what turns a dropped wheel into a rollover or a head-on. VDOE's sequence takes speed off first without braking, commits fully to the shoulder instead of fighting the pavement edge, picks a return point, and only then steers back gently, with a counter-steer ready because the tire grabs suddenly when it climbs back onto the road.",
+    "explanation": "The instinctive reaction — brake hard and yank the wheel back — is what turns a dropped wheel into a rollover or a head-on. VDOE's sequence takes speed off first without braking, chooses the return point before turning the wheel, steers toward it only after slowing, climbs the edge gently, and finishes with a counter-steer because the tire grabs suddenly when it is back on asphalt.",
     "source": {
       "kind": "reauthored",
       "basis": "VDOE Module 13, Key Concepts for Lesson 6"
@@ -5957,11 +5959,12 @@
       "verified_on": "2026-09-04",
       "authority": [
         {
-          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6",
+          "cite": "VDOE, Curriculum Guide for Behind-the-Wheel In-Car Instruction, Module 13, Key Concepts for Lesson 6 (Off Road Recovery, p. 34)",
           "url": "https://www.doe.virginia.gov/teaching-learning-assessment/instruction/driver-education",
           "effective": "2022-07-01"
         }
-      ]
+      ],
+      "note": "Keyed to the guide's own bullet order on p. 34: hands firm, ease off the accelerator, do not brake, determine target and path of travel, with speed under control turn toward target, ease onto the paved surface, counter-steer. The guide's 'drop both tires off roadway' bullet is a vehicle state rather than a step and sits between target and steering in a list that is not numbered, so it is not a step here."
     },
     "status": "reviewed"
   }
