@@ -298,3 +298,65 @@ def test_no_repository_file_names_a_missing_file():
         for token in unresolved_filenames(path.read_text(errors="ignore")):
             offenders.append(f"{path.relative_to(ROOT)} -> {token}")
     assert not offenders, "references to files that do not exist here: " + "; ".join(sorted(offenders))
+
+
+# --- corrections that must stay corrected --------------------------------
+
+# Each entry pins a fact that was once wrong in this bank or in material it
+# was written against, by concept. `key` is a regex the correct option's text
+# must match; `explain` must match the explanation or the correct rationale,
+# and `never` must match neither. New variants of these concepts inherit the
+# check, which is the point: a fault fixed once should not be re-authored.
+CORRECTIONS = [
+    {   # the per se limit is 0.08 *or more*; exactly 0.08 is enough
+        "concept": "de10a-per-se-threshold",
+        "key": r"0\.08(%)? or (more|higher)",
+        "explain": r"0\.08 (grams )?or more",
+        "never": r"(exceed\w*|above|more than|over) 0?\.08",
+    },
+    {   # aggressive driving: being a hazard is a prong on its own
+        "concept": "de11d-aggressive-driving",
+        "explain": r"hazard to (another|someone)",
+        "never": r"(requires|must (show|prove)) intent|defined as the intent",
+    },
+    {
+        "concept": "de11b-anger-response",
+        "explain": r"hazard to (another|someone)",
+        "never": r"(requires|must (show|prove)) intent|defined as the intent",
+    },
+    {   # the school-bus exception is the divided highway and the barrier, not
+        # "divided highways" alone
+        "concept": "de18g-school-bus",
+        "explain": r"divided highway",
+        "never": r"only (on|for) divided highways",
+    },
+    {   # cancellation notice is 45 days, not 10
+        "concept": "de21d-nonrenewal-notice",
+        "key": r"\b45 days\b",
+        "never": r"\b10 days\b(?! is| was| —)",
+    },
+    {   # 4 seconds at 46-70 mph per the manual's table
+        "concept": "de5c-following-seconds-at-highway-speed",
+        "key": r"\b4 seconds\b",
+    },
+]
+
+
+@pytest.mark.parametrize("rule", CORRECTIONS, ids=lambda r: r["concept"])
+def test_a_corrected_fault_stays_corrected(shipped, rule):
+    matching = [i for i in shipped if i.get("concept") == rule["concept"]]
+    assert matching, f"no shipped item on {rule['concept']}; drop the rule or restore the item"
+    for item in matching:
+        if item.get("form") == "ordering":
+            continue
+        key = next(o for o in item["options"] if o["id"] == item["answer"])
+        prose = item.get("explanation", "") + " " + key.get("rationale", "")
+        if "key" in rule:
+            assert re.search(rule["key"], key["text"], re.I), \
+                f"{item['id']}: key text {key['text']!r} does not match {rule['key']!r}"
+        if "explain" in rule:
+            assert re.search(rule["explain"], prose, re.I), \
+                f"{item['id']}: explanation no longer states {rule['explain']!r}"
+        if "never" in rule:
+            hit = re.search(rule["never"], prose, re.I)
+            assert not hit, f"{item['id']}: reintroduces {hit.group(0)!r}"

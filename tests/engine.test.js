@@ -9,7 +9,12 @@ import { migrate, STATE_VERSION } from '../js/store.js';
 const T0 = '2026-09-01T12:00:00.000Z';
 const days = (n, from = T0) => new Date(new Date(from).getTime() + n * 86400000).toISOString();
 
-export function suite() {
+/**
+ * @param {object} [opts]
+ * @param {Array}  [opts.bank]  the shipped bank, when the runner can load it;
+ *                              the real-bank test is skipped without it
+ */
+export function suite({ bank: shipped = null } = {}) {
   const results = [];
   const test = (name, fn) => {
     try {
@@ -277,6 +282,42 @@ export function suite() {
     assert(migrate(v2, T0) === v2, 'a current profile passes through untouched');
   });
 
+  // ---- the shipped bank
+
+  test('twelve sessions on the shipped bank spread across it without repeats', () => {
+    if (!shipped) return;
+    const bank = shipped.filter((it) => it.status === 'reviewed');
+    assert(bank.length >= 80, `bank too small to test: ${bank.length}`);
+    const state = blankState();
+    const rng = seeded(7);
+    let now = T0;
+    let missed = null;
+    const topics = new Set();
+    for (let n = 0; n < 12; n++) {
+      // Two sittings a minute apart, then one a day.
+      now = n < 2 ? T0 : days(n - 1);
+      const s = sessionLib.start(state, bank, { now, rng });
+      const concepts = new Set();
+      while (s.current) {
+        const it = s.current;
+        topics.add(select.topicsOf(it)[0]);
+        assert(!concepts.has(it.concept), `session ${n} asked concept ${it.concept} twice`);
+        concepts.add(it.concept);
+        const miss = n === 0 && s.asked.length === 2;
+        if (miss) missed = it.id;
+        sessionLib.answer(state, s, miss ? wrongAnswer(it) : rightAnswer(it), { now });
+        sessionLib.advance(state, s, bank, { now, rng });
+      }
+      assert(s.asked.length === 10, `session ${n} ran short at ${s.asked.length}`);
+      assert(new Set(s.asked).size === 10, `session ${n} repeated an item`);
+      if (n === 1) assert(!s.asked.includes(missed), 'the item missed a minute ago came straight back');
+    }
+    const distinct = Object.keys(state.items).length;
+    assert(distinct >= 50, `120 answers met only ${distinct} distinct items`);
+    const all = new Set(bank.map((it) => select.topicsOf(it)[0]));
+    assert(topics.size === all.size, `topics never drawn: ${[...all].filter((t) => !topics.has(t))}`);
+  });
+
   return results;
 }
 
@@ -307,6 +348,15 @@ function blankState() {
 
 function wrongOption(item) {
   return item.options.find((o) => o.id !== item.answer).id;
+}
+
+/** A right answer for any form the bank ships. */
+function rightAnswer(item) {
+  return item.form === 'ordering' ? item.answerOrder : item.answer;
+}
+
+function wrongAnswer(item) {
+  return item.form === 'ordering' ? [...item.answerOrder].reverse() : wrongOption(item);
 }
 
 /** Deterministic pseudo-random, so a failure is reproducible. */
