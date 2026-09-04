@@ -56,6 +56,7 @@ Anything else stays in the file and is filtered out at load.
 ```json
 {
   "id": "de10a-implied-consent-003",
+  "concept": "de10a-implied-consent",
   "sol": ["DE.10a"],
   "region": "va",
   "form": "multiple_choice",
@@ -63,6 +64,7 @@ Anything else stays in the file and is filtered out at load.
   "options": [{ "id": "a", "text": "...", "rationale": "why this one is wrong" }],
   "answer": "c",
   "explanation": "...",
+  "source": { "kind": "reauthored", "basis": "2026 law verification §3" },
   "accuracy": {
     "status": "verified",
     "verified_on": "2026-09-01",
@@ -74,9 +76,23 @@ Anything else stays in the file and is filtered out at load.
 }
 ```
 
-Forms: `multiple_choice`, `true_false`, `scenario`, and `ordering` (which uses `steps` and
-`answerOrder` in place of `options`; each step is `{ "text": ..., "why": ... }`). Regions:
-`va` or `nova`.
+Forms: `multiple_choice`, `true_false`, and `ordering` (which uses `steps` and `answerOrder`
+in place of `options`; each step is `{ "text": ..., "why": ... }`). Regions: `va` or `nova`.
+
+**`concept` names the fact being tested**, and is the item id without its serial. Two items
+with the same concept are variants: the same rule dressed in a different scenario, with the same
+`sol[0]`. The engine never asks two variants in one session, so a concept can be re-tested
+without the learner meeting the same question twice. Write a variant when a topic is thin, not
+when you have a second fact -- a second fact is a second concept.
+
+**`source.kind` says where the question came from.** `reauthored` means it restates something
+the source course tests, in new words; `module13` means it comes from the DMV's own Module 13
+material; `experiment` means it was written from a primary source the course does not test
+against. An `experiment` item also carries `source.channel` -- `manual` (Virginia Driver's
+Manual), `code` (Code of Virginia) or `sol` (the VDOE curriculum) -- and `source.citation`, the
+chapter, section number or SOL id it rests on. The app labels these by their source so a learner
+knows the question is inside the curriculum even if it is not in their course, and a setting lets
+them leave such questions out. The accuracy gate is the same for every kind.
 
 **Every option needs a `rationale`, and every ordering step needs a `why`.** A wrong answer
 should teach why it is wrong, not merely be marked wrong. Feedback addresses what the learner

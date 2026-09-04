@@ -124,7 +124,6 @@ Work is queued by what a question needs, not by where it came from.
 
 ## Deferred
 
-- Item-difficulty calibration export — once enough responses accumulate, dump learned Elo ratings
-  back into `data/items.json` as `difficulty0` so a fresh profile starts calibrated.
-- Spaced-repetition scheduling across sessions (currently a per-session spacing window only).
+- FSRS parameter optimisation per learner. The scheduler ships the published default weights;
+  fitting them needs full review logs from many learners, which the app does not collect.
 - Printable summary of the law/course divergences, for the day of a course quiz.
