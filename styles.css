@@ -232,6 +232,17 @@ button.secondary {
 .steps .chosen-wrong .n { background: var(--bad); }
 .steps .placed { margin-left: 0.5rem; white-space: nowrap; }
 .steps .move { margin-left: auto; display: flex; gap: 0.25rem; }
+.steps .grip {
+  display: flex; align-items: center; gap: 0.45rem; flex: 0 0 auto;
+  color: var(--muted); font-size: 1.1rem; line-height: 1;
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+  margin: -0.55rem 0 -0.55rem -0.8rem; padding: 0.55rem 0.3rem 0.55rem 0.8rem;
+}
+.steps li.dragging {
+  cursor: grabbing; border-color: var(--accent); background: var(--panel);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16); position: relative; z-index: 1;
+}
+.steps li.dragging .grip { cursor: grabbing; }
 .steps .move button {
   background: transparent; border: 1px solid var(--line); border-radius: 6px;
   width: 1.9rem; height: 1.9rem; cursor: pointer; color: var(--ink); font: inherit;

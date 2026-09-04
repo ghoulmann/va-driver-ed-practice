@@ -209,9 +209,10 @@ function wireQuit() {
 function renderOrdering(item, head) {
   const order = state.session.order ||= shuffle(item.steps.map((_, i) => i));
   app.innerHTML = `<section class="card">${head}
-    <p class="muted small">Put the steps in order, then submit.</p>
-    <ul class="steps">${order.map((stepIdx, pos) => `
-      <li><span class="n">${pos + 1}</span><span>${escape(item.steps[stepIdx].text)}</span>
+    <p class="muted small">Drag the steps into order, or use the arrows, then submit.</p>
+    <ul class="steps sortable">${order.map((stepIdx, pos) => `
+      <li><span class="grip"><span class="n">${pos + 1}</span><span aria-hidden="true">⠿</span></span>
+        <span>${escape(item.steps[stepIdx].text)}</span>
         <span class="move">
           <button data-up="${pos}" ${pos === 0 ? 'disabled' : ''} aria-label="Move up">↑</button>
           <button data-down="${pos}" ${pos === order.length - 1 ? 'disabled' : ''} aria-label="Move down">↓</button>
@@ -229,8 +230,60 @@ function renderOrdering(item, head) {
   app.querySelectorAll('[data-down]').forEach((b) => {
     b.onclick = () => { swap(order, +b.dataset.down, +b.dataset.down + 1); renderSession(); };
   });
+  wireDrag(app.querySelector('.sortable'), order);
   document.getElementById('submit-order').onclick = () => submit([...order]);
   wireQuit();
+}
+
+/**
+ * Pointer-driven reordering. Pointer events rather than HTML drag-and-drop
+ * because the latter does not fire on iOS Safari, and a sixteen-year-old is
+ * likelier to be on a phone than a desktop. As the pointer crosses a
+ * neighbour's midline the neighbours are moved around the dragged row, never
+ * the dragged row itself: detaching an element, even for the instant an
+ * insertBefore takes, releases its pointer capture and ends the gesture.
+ * The arrows remain for keyboard users.
+ */
+function wireDrag(list, order) {
+  if (!list) return;
+  const rows = () => [...list.children];
+  list.querySelectorAll('.grip').forEach((grip) => {
+    grip.onpointerdown = (e) => {
+      const li = grip.closest('li');
+      e.preventDefault();
+      grip.setPointerCapture(e.pointerId);
+      li.classList.add('dragging');
+
+      grip.onpointermove = (ev) => {
+        const others = rows().filter((r) => r !== li);
+        let to = others.findIndex((r) => {
+          const b = r.getBoundingClientRect();
+          return ev.clientY < b.top + b.height / 2;
+        });
+        if (to === -1) to = others.length;
+        const from = rows().indexOf(li);
+        if (to === from) return;
+        if (to > from) {
+          for (const r of others.slice(from, to)) list.insertBefore(r, li);
+        } else {
+          for (const r of others.slice(to, from).reverse()) list.insertBefore(r, li.nextSibling);
+        }
+        const [v] = order.splice(from, 1);
+        order.splice(to, 0, v);
+        rows().forEach((r, i) => { r.querySelector('.n').textContent = i + 1; });
+      };
+
+      const done = () => {
+        grip.onpointermove = null;
+        grip.onpointerup = null;
+        grip.onpointercancel = null;
+        li.classList.remove('dragging');
+        renderSession();
+      };
+      grip.onpointerup = done;
+      grip.onpointercancel = done;
+    };
+  });
 }
 
 function submit(response) {
