@@ -115,6 +115,42 @@ def test_region_is_known(shipped):
         assert item.get("region") in {"va", "nova"}, f"{item['id']}: bad region"
 
 
+def test_form_is_one_the_app_renders(shipped):
+    for item in shipped:
+        assert item.get("form") in {"multiple_choice", "true_false", "ordering"}, \
+            f"{item['id']}: form {item.get('form')!r} has no renderer"
+
+
+def test_concept_is_the_id_without_its_serial(items):
+    """`concept` groups variants; the engine never asks two of one concept in a session."""
+    for item in items:
+        assert item.get("concept"), f"{item['id']}: no concept"
+        assert re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)+", item["concept"]), \
+            f"{item['id']}: concept {item['concept']!r} is not a kebab slug"
+        assert item["id"].startswith(item["concept"] + "-"), \
+            f"{item['id']}: id should be its concept plus a serial"
+
+
+def test_variants_share_their_primary_topic(items):
+    by_concept = {}
+    for item in items:
+        by_concept.setdefault(item["concept"], set()).add(item["sol"][0])
+    split = {c: sorted(tags) for c, tags in by_concept.items() if len(tags) > 1}
+    assert not split, f"variants of one concept tagged to different topics: {split}"
+
+
+def test_source_says_where_the_question_came_from(items):
+    for item in items:
+        source = item.get("source") or {}
+        assert source.get("kind") in {"reauthored", "module13", "experiment"}, \
+            f"{item['id']}: source.kind must be reauthored, module13 or experiment"
+        if source["kind"] == "experiment":
+            assert source.get("channel") in {"manual", "code", "sol"}, \
+                f"{item['id']}: an experiment item needs source.channel of manual, code or sol"
+            assert source.get("citation", "").strip(), \
+                f"{item['id']}: an experiment item needs source.citation"
+
+
 # --- the two gates ---------------------------------------------------------
 
 def test_no_draft_or_unverified_item_would_ship(items):
