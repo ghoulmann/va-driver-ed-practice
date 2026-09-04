@@ -71,6 +71,18 @@ def test_ordering_items_have_a_key(shipped):
         assert len(steps) >= 3, f"{item['id']}: an ordering item needs at least three steps"
         assert sorted(key) == list(range(len(steps))), \
             f"{item['id']}: answerOrder is not a permutation of its steps"
+        for n, step in enumerate(steps, start=1):
+            assert step.get("text", "").strip(), f"{item['id']}: step {n} has no text"
+
+
+def test_every_ordering_step_carries_a_why(shipped):
+    """The ordering counterpart of the option rationale: a misplaced step
+    should teach why it sits where it does, not just be marked out of place."""
+    for item in shipped:
+        if item["form"] != "ordering":
+            continue
+        for n, step in enumerate(item["steps"], start=1):
+            assert step.get("why", "").strip(), f"{item['id']}: step {n} has no why"
 
 
 def test_every_option_carries_a_rationale(shipped):

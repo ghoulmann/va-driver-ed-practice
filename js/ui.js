@@ -188,7 +188,7 @@ function renderOrdering(item, head) {
   app.innerHTML = `<section class="card">${head}
     <p class="muted small">Put the steps in order, then submit.</p>
     <ul class="steps">${order.map((stepIdx, pos) => `
-      <li><span class="n">${pos + 1}</span><span>${escape(item.steps[stepIdx])}</span>
+      <li><span class="n">${pos + 1}</span><span>${escape(item.steps[stepIdx].text)}</span>
         <span class="move">
           <button data-up="${pos}" ${pos === 0 ? 'disabled' : ''} aria-label="Move up">↑</button>
           <button data-down="${pos}" ${pos === order.length - 1 ? 'disabled' : ''} aria-label="Move down">↓</button>
@@ -216,22 +216,54 @@ function submit(response) {
   renderFeedback(item, response, correct);
 }
 
+/**
+ * Feedback must address what the learner did, not what the author wanted to
+ * say. For an ordering item that means showing the key with the learner's own
+ * placement against it, and the reason for each step they misplaced.
+ */
+function orderingFeedback(item, response) {
+  const key = item.answerOrder || item.steps.map((_, i) => i);
+  const rows = key.map((stepIdx, pos) => {
+    const had = response.indexOf(stepIdx);
+    const inPlace = had === pos;
+    const step = item.steps[stepIdx];
+    return `<li class="${inPlace ? 'correct' : 'chosen-wrong'}">
+      <span class="n">${pos + 1}</span>
+      <span>${escape(step.text)}
+        ${inPlace ? '' : `<span class="small muted placed">you had this ${ordinal(had + 1)}</span>`}
+        ${inPlace ? '' : `<div class="small muted rationale">${escape(step.why)}</div>`}
+      </span></li>`;
+  });
+  const inPlace = key.filter((stepIdx, pos) => response[pos] === stepIdx).length;
+  return { body: `<ul class="steps">${rows.join('')}</ul>`, inPlace, total: key.length };
+}
+
+function ordinal(n) {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+}
+
 function renderFeedback(item, response, correct) {
-  const isOrdering = item.form === 'ordering';
-  const body = isOrdering
-    ? `<ul class="steps">${item.steps.map((text, i) => `
-        <li><span class="n">${i + 1}</span><span>${escape(text)}</span></li>`).join('')}</ul>`
-    : `<ul class="options">${item.options.map((o) => {
-        const cls = o.id === item.answer ? 'correct' : (o.id === response ? 'chosen-wrong' : '');
-        return `<li><button class="${cls}" disabled><span class="key">${o.id.toUpperCase()}</span>${escape(o.text)}
-          ${o.rationale ? `<div class="small muted rationale">${escape(o.rationale)}</div>` : ''}</button></li>`;
-      }).join('')}</ul>`;
+  let body;
+  let verdict = correct ? 'Correct.' : 'Not quite.';
+  if (item.form === 'ordering') {
+    const fb = orderingFeedback(item, response);
+    body = fb.body;
+    if (!correct) verdict = `Not quite — ${fb.inPlace} of ${fb.total} in place.`;
+  } else {
+    body = `<ul class="options">${item.options.map((o) => {
+      const cls = o.id === item.answer ? 'correct' : (o.id === response ? 'chosen-wrong' : '');
+      return `<li><button class="${cls}" disabled><span class="key">${o.id.toUpperCase()}</span>${escape(o.text)}
+        ${o.rationale ? `<div class="small muted rationale">${escape(o.rationale)}</div>` : ''}</button></li>`;
+    }).join('')}</ul>`;
+  }
 
   app.innerHTML = `<section class="card">
     <p class="progress">Question ${state.session.responses.length} of ${state.session.length}</p>
     <p class="stem">${escape(item.stem)}</p>
     ${body}
-    <p class="verdict ${correct ? 'right' : 'wrong'}">${correct ? 'Correct.' : 'Not quite.'}</p>
+    <p class="verdict ${correct ? 'right' : 'wrong'}">${verdict}</p>
     <p>${escape(item.explanation)}</p>
     ${item.course_answer ? divergenceBlock(item) : ''}
     ${authorityBlock(item)}

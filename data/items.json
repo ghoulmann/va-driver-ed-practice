@@ -1338,14 +1338,38 @@
     "form": "ordering",
     "stem": "Put the steps of a safe lane change in order.",
     "steps": [
-      "Check mirrors",
-      "Signal",
-      "Check the blind zone",
-      "Adjust speed",
-      "Move when the way is clear",
-      "Use minimal steering",
-      "Establish lane position",
-      "Cancel the signal"
+      {
+        "text": "Check mirrors",
+        "why": "The mirrors come before anything else because they tell you whether a lane change is available at all, and what is closing from behind."
+      },
+      {
+        "text": "Signal",
+        "why": "The signal goes out as soon as you intend to move, before the blind-zone check, so following drivers get the longest possible warning."
+      },
+      {
+        "text": "Check the blind zone",
+        "why": "The head check is last before moving because a mirror-only check misses the lane beside you, and a check done earlier is stale by the time you move."
+      },
+      {
+        "text": "Adjust speed",
+        "why": "Match the speed of the lane you are entering before you enter it; steering into faster traffic at the wrong speed makes the car behind brake for you."
+      },
+      {
+        "text": "Move when the way is clear",
+        "why": "The move waits on the gap, not on the signal. A signal is a request; it is not a right of way."
+      },
+      {
+        "text": "Use minimal steering",
+        "why": "A lane change at speed needs only a slight steering input. A sharp turn of the wheel unsettles the vehicle and can carry it into the lane beyond."
+      },
+      {
+        "text": "Establish lane position",
+        "why": "Centre the vehicle in the new lane before doing anything else. The maneuver is not finished until the car is settled."
+      },
+      {
+        "text": "Cancel the signal",
+        "why": "A signal left on tells other drivers you are about to move again. Cancelling it is the last step of the maneuver, not housekeeping afterwards."
+      }
     ],
     "answerOrder": [
       0,
@@ -1389,12 +1413,30 @@
     "form": "ordering",
     "stem": "Your right tires drop onto the shoulder at speed. Put the recovery steps in order.",
     "steps": [
-      "Keep both hands firmly on the wheel and hold your lane position on the shoulder",
-      "Ease off the accelerator and let the vehicle slow — do not brake",
-      "Drop both tires fully off the roadway to establish maximum control",
-      "Determine a target and path of travel back onto the pavement",
-      "With speed under control, steer toward the target and ease onto the paved surface",
-      "Counter-steer as the front tire regains the roadway to hold lane position"
+      {
+        "text": "Keep both hands firmly on the wheel and hold your lane position on the shoulder",
+        "why": "The first job is not to react. A firm grip and a straight line along the shoulder prevent the instinctive jerk back toward the pavement, which at speed is what starts a rollover."
+      },
+      {
+        "text": "Ease off the accelerator and let the vehicle slow — do not brake",
+        "why": "Speed comes down by coasting. Braking with two wheels on gravel and two on asphalt gives the two sides different grip and drags the car sideways."
+      },
+      {
+        "text": "Drop both tires fully off the roadway to establish maximum control",
+        "why": "A tire half on the pavement edge is a tire waiting to catch. With both right tires fully on the shoulder the car is on one surface and stable enough to steer."
+      },
+      {
+        "text": "Determine a target and path of travel back onto the pavement",
+        "why": "Choose where you will come back on, a point where the edge is low and the road ahead is clear, before you steer, so the steering has an aim."
+      },
+      {
+        "text": "With speed under control, steer toward the target and ease onto the paved surface",
+        "why": "Only once speed is under control: turn the wheel enough to climb the edge and ease back on. Doing this while still fast is how the car ends up across the centre line."
+      },
+      {
+        "text": "Counter-steer as the front tire regains the roadway to hold lane position",
+        "why": "As the front tire regains pavement it grips suddenly and the car tries to swing toward the centre line. A prompt counter-steer straightens it in the lane."
+      }
     ],
     "answerOrder": [
       0,

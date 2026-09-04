@@ -75,10 +75,13 @@ Anything else stays in the file and is filtered out at load.
 ```
 
 Forms: `multiple_choice`, `true_false`, `scenario`, and `ordering` (which uses `steps` and
-`answerOrder` in place of `options`). Regions: `va` or `nova`.
+`answerOrder` in place of `options`; each step is `{ "text": ..., "why": ... }`). Regions:
+`va` or `nova`.
 
-**Every option needs a `rationale`.** A wrong answer should teach why it is wrong, not merely
-be marked wrong.
+**Every option needs a `rationale`, and every ordering step needs a `why`.** A wrong answer
+should teach why it is wrong, not merely be marked wrong. Feedback addresses what the learner
+did: the option they chose, the step they misplaced and where they put it. An explanation that
+does not mention the learner's answer is not feedback, whatever else it explains.
 
 ### Sourcing
 

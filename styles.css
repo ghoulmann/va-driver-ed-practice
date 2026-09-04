@@ -227,6 +227,10 @@ button.secondary {
   background: var(--accent); color: var(--accent-ink);
   border-radius: 50%; font-size: 0.8rem; font-weight: 700;
 }
+.steps .correct { border-color: var(--good); box-shadow: inset 3px 0 0 var(--good); }
+.steps .chosen-wrong { border-color: var(--bad); box-shadow: inset 3px 0 0 var(--bad); align-items: flex-start; }
+.steps .chosen-wrong .n { background: var(--bad); }
+.steps .placed { margin-left: 0.5rem; white-space: nowrap; }
 .steps .move { margin-left: auto; display: flex; gap: 0.25rem; }
 .steps .move button {
   background: transparent; border: 1px solid var(--line); border-radius: 6px;
