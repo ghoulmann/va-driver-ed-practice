@@ -9,7 +9,7 @@
 
 import * as fsrs from './fsrs.js';
 
-const PREFIX = 'nova-study:v1:';
+const PREFIX = 'va-driver-ed-practice:v1:';
 const INDEX = `${PREFIX}profiles`;
 const ACTIVE = `${PREFIX}active`;
 
@@ -143,14 +143,14 @@ export function available() {
 export function exportProfile(id) {
   const state = load(id);
   if (!state) return null;
-  return JSON.stringify({ format: 'nova-study-profile', version: STATE_VERSION, state }, null, 2);
+  return JSON.stringify({ format: 'va-driver-ed-practice-profile', version: STATE_VERSION, state }, null, 2);
 }
 
 export function importProfile(json) {
   const parsed = JSON.parse(json);
-  const state = parsed.format === 'nova-study-profile' ? parsed.state : parsed;
+  const state = parsed.format === 'va-driver-ed-practice-profile' ? parsed.state : parsed;
   if (!state || typeof state !== 'object' || !state.items) {
-    throw new Error('Not a nova-study profile export.');
+    throw new Error('Not a Virginia Driver Ed practice profile export.');
   }
   const id = createProfile(state.name || 'Imported');
   save(id, migrate({ ...emptyState(state.name || 'Imported'), ...state, version: state.version || 1 }));
