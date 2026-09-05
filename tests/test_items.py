@@ -255,6 +255,10 @@ EXTERNAL_OK = {
     "mod.js", "path/to/file.ext", "path/to/next-file.ext",
 }
 
+# Build outputs: written by a tool in tools/, ignored by git, so present on a
+# machine that has run the tool and absent on a fresh checkout or the CI runner.
+BUILD_OUTPUTS = {"dist/artifact.html", "artifact.html"}
+
 TEXT_SUFFIXES = {".md", ".json", ".js", ".mjs", ".html", ".py", ".yml", ".txt"}
 SKIP_DIRS = {".git", ".venv", "dist", "__pycache__", ".pytest_cache", "node_modules"}
 
@@ -266,7 +270,7 @@ def unresolved_filenames(text):
     """Filename-shaped tokens in `text` that name nothing in this repository."""
     out = set()
     for token in FILENAME.findall(text):
-        if token in EXTERNAL_OK or (ROOT / token).exists():
+        if token in EXTERNAL_OK or token in BUILD_OUTPUTS or (ROOT / token).exists():
             continue
         # A bare name may sit anywhere in the tree.
         if any(p.name == token for p in ROOT.rglob(token) if p.is_file()):
