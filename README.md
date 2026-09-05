@@ -109,7 +109,9 @@ All attribution lives in `credits.ip.html`, rendered into the Credits view. Nowh
 
 Two licences, split by what the file is:
 
-- **Code** — `index.html`, `styles.css`, `js/`, `tools/`, `tests/`, the workflow — MIT. See
+- **Code** — `index.html`, `styles.css`, `js/`, `tools/`, `tests/`, the workflow —
+  [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html): modify freely, but any modified
+  copy that is distributed or hosted must publish its source under the same licence. See
   [LICENSE](LICENSE).
 - **Content** — the question bank and data in `data/`, `research/`, and `credits.ip.html` —
   [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): share and adapt
