@@ -242,7 +242,7 @@ def test_resources_list_only_primary_sources(resources):
 # A match may not begin part-way through a dotted name, or "credits.ip.html"
 # would be read as "ip.html"; hence the dot in the lookbehind. The trailing
 # lookahead rejects method calls such as r.json().
-FILENAME = re.compile(r"(?<![\w}$.])\.?[A-Za-z0-9_-]+(?:[./][A-Za-z0-9_-]+)*"
+FILENAME = re.compile(r"(?<![\w}$./-])\.?[A-Za-z0-9_-]+(?:[./][A-Za-z0-9_-]+)*"
                       r"\.(?:md|json|js|mjs|py|html|css|yml|yaml|toml|txt)\b(?!\()")
 
 # Files referenced before they exist: planned work in backlog.md, and tooling a
