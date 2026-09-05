@@ -85,13 +85,21 @@ body {
   background: var(--panel);
 }
 
+/* The footer is pinned to the viewport on every view, the assessment included.
+ * Its height is reserved under <main> as padding so the last card on a long
+ * page can still scroll clear of it. */
 footer.chrome {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 10;
   border-bottom: 0;
   border-top: 1px solid var(--line);
-  margin-top: 3rem;
+  padding-top: 0.6rem;
+  padding-bottom: calc(0.6rem + env(safe-area-inset-bottom));
   color: var(--muted);
   font-size: 0.85rem;
 }
+footer.chrome p { margin: 0; }
 
 .chrome h1 {
   font: 600 1.05rem/1.3 var(--display);
@@ -116,6 +124,7 @@ main {
   max-width: 46rem;
   margin: 0 auto;
   padding: clamp(1.25rem, 4vw, 2.5rem);
+  padding-bottom: calc(clamp(1.25rem, 4vw, 2.5rem) + 4.5rem);
 }
 
 .card {
