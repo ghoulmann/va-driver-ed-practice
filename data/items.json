@@ -1503,7 +1503,7 @@
     "explanation": "Virginia lets you sign up as an organ, eye and tissue donor on your permit, license or ID application at any age the DMV will accept you, because Va. Code § 32.1-291.4 allows a minor to make an anatomical gift once they are at least 15 years and 6 months old. Until you turn 18, though, your parents keep the last word: under § 32.1-291.8(G) a parent who can be reached may revoke or change the gift if an unemancipated minor dies. The Driver's Manual says the same thing in plain terms, which is why it urges you to tell your family what you decided.",
     "source": {
       "kind": "reauthored",
-      "basis": "course Session 1, page 42 (bank item 1.16); Virginia Driver's Manual Section 7, p. 34"
+      "basis": "Va. Code § 32.1-291.4; Virginia Driver's Manual Section 7, p. 34"
     },
     "accuracy": {
       "status": "verified",
@@ -2095,7 +2095,7 @@
     "explanation": "Mirrors get set before the car moves, and the Driver's Manual gives a simple test for the outside ones: turn each until you can only just see the side of your own vehicle. The inside mirror should frame the whole rear window. Set this way the three mirrors overlap as little as possible and cover more of the road beside and behind you, although a shoulder glance is still needed before changing lanes because no mirror setting removes the blind spot completely.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 4, page 8 (mirror setting)"
+      "basis": "Virginia Driver's Manual Section 3, Blind Spots, p. 20"
     },
     "accuracy": {
       "status": "verified",
@@ -2107,7 +2107,7 @@
           "effective": "2026-04-27"
         }
       ],
-      "note": "Manual p. 20: adjust the inside mirror to frame the entire back window and both side mirrors so you can barely see the sides of the vehicle. The key of the course that inspired this review on this topic (Session 4 p. 8) is the same direction of adjustment, phrased as seeing less of the vehicle. The effective date is the manual edition's PDF creation date (April 2026 edition); the manual carries no separate in-force date."
+      "note": "Manual p. 20: adjust the inside mirror to frame the entire back window and both side mirrors so you can barely see the sides of the vehicle. The key of the course that inspired this review on this topic is the same direction of adjustment, phrased as seeing less of the vehicle. The effective date is the manual edition's PDF creation date (April 2026 edition); the manual carries no separate in-force date."
     },
     "status": "reviewed"
   },
@@ -2305,7 +2305,7 @@
           "effective": "2026-04-27"
         }
       ],
-      "note": "Manual p. 14, Hand Position: sit straight but relaxed; hands at the 8 o'clock and 4 o'clock positions; hold with fingers and thumbs; avoid gripping with the palms. The airbag reasoning in the explanation is the stated rationale of the course that inspired this review (Session 3), not the manual's; the manual gives the position without a reason."
+      "note": "Manual p. 14, Hand Position: sit straight but relaxed; hands at the 8 o'clock and 4 o'clock positions; hold with fingers and thumbs; avoid gripping with the palms. The airbag reasoning in the explanation is the stated rationale of the course that inspired this review, not the manual's; the manual gives the position without a reason."
     },
     "status": "reviewed"
   },
@@ -2395,11 +2395,11 @@
     ],
     "answer": "c",
     "course_answer": "b",
-    "divergence": "The course that inspired this review teaches one flat three-second gap for every speed (Session 6, page 21, question 6.9). The Driver's Manual scales the gap with speed: 2 seconds under 35 mph, 3 seconds from 35 to 45, 4 seconds from 46 to 70, and it warns that these cushions no longer work above 70. At 60 mph the manual's answer is 4 seconds; a course quiz phrased without a speed would accept 3.",
+    "divergence": "The course that inspired this review teaches one flat three-second gap for every speed. The Driver's Manual scales the gap with speed: 2 seconds under 35 mph, 3 seconds from 35 to 45, 4 seconds from 46 to 70, and it warns that these cushions no longer work above 70. At 60 mph the manual's answer is 4 seconds; a course quiz phrased without a speed would accept 3.",
     "explanation": "The Driver's Manual's following-distance rule grows with speed. Watch the vehicle ahead pass a fixed mark, then count until you reach it: under 35 mph you need 2 seconds, from 35 to 45 mph 3 seconds, and from 46 to 70 mph 4 seconds. If you arrive before the count is up, drop back. Those are dry-road minimums; add time for rain, heavy traffic, a rough surface or a vehicle in poor condition. Above 70 mph the manual says the cushions no longer work.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 6, page 21 (following rule, course question 6.9)"
+      "basis": "Virginia Driver's Manual Section 3, Following Distance, p. 19"
     },
     "accuracy": {
       "status": "verified",
@@ -2411,7 +2411,7 @@
           "effective": "2026-04-27"
         }
       ],
-      "note": "Manual p. 19 table: 2 seconds under 35 mph, 3 seconds 35-45 mph, 4 seconds 46-70 mph; footnote that the cushions do not work above 70; add extra seconds for bad weather, heavy traffic, poor pavement or a vehicle in poor condition. Course question 6.9 keys a flat 3-second rule with no speed."
+      "note": "Manual p. 19 table: 2 seconds under 35 mph, 3 seconds 35-45 mph, 4 seconds 46-70 mph; footnote that the cushions do not work above 70; add extra seconds for bad weather, heavy traffic, poor pavement or a vehicle in poor condition. The course that inspired this review keys a flat 3-second rule with no speed."
     },
     "status": "reviewed"
   },
@@ -2846,7 +2846,7 @@
           "effective": "1989-07-01"
         }
       ],
-      "note": "§ 46.2-849(B): 'Wherever the lawful speed is more than 35 miles per hour, such signals shall be given continuously for a distance of at least 100 feet, and in all other cases at least 50 feet, before slowing down, stopping, turning, or partly turning.' Latest amendment 2019 c. 780. § 46.2-848 is the duty to signal when another vehicle may be affected; its 'partly turn from a direct line' wording is what brings a lane change under the rule. The course that inspired this review states a flat 100 feet for lane changes (Session 2, page 52), which matches the law at expressway speed but omits the 50-foot tier."
+      "note": "§ 46.2-849(B): 'Wherever the lawful speed is more than 35 miles per hour, such signals shall be given continuously for a distance of at least 100 feet, and in all other cases at least 50 feet, before slowing down, stopping, turning, or partly turning.' Latest amendment 2019 c. 780. § 46.2-848 is the duty to signal when another vehicle may be affected; its 'partly turn from a direct line' wording is what brings a lane change under the rule. The course that inspired this review states a flat 100 feet for lane changes, which matches the law at expressway speed but omits the 50-foot tier."
     },
     "status": "reviewed"
   },
@@ -2994,7 +2994,7 @@
     "explanation": "Va. Code § 46.2-839 sets the rule for overtaking a bicycle, an electric bike, a moped, a ridden animal, or a horse-drawn vehicle: pass at a reasonable speed with at least three feet between you and them, and do not drift back to the right until you are safely clear. If your lane is not wide enough to leave three feet while staying in it, the same section tells you to change lanes to pass. A cyclist can wobble, swerve around a pothole, or be pushed sideways by wind, so treat three feet as the floor and give more when you can.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 6 quiz 6.12 (three-foot passing rule); Session 10, page 69 (passing bicyclists)"
+      "basis": "Va. Code § 46.2-839"
     },
     "accuracy": {
       "status": "verified",
@@ -3374,7 +3374,7 @@
     "explanation": "Traffic stops are stressful for anyone, and for a driver on the autism spectrum flashing lights, loud commands, and unexpected questions can make communicating much harder. Virginia's Driver Communication Improvement Program, better known as the Blue Envelope Program, was set up under Va. Code § 46.2-203.3 (effective July 1, 2025). A participating driver picks up the envelope free at any DMV customer service center, with no documentation required, and stores the registration, insurance, and emergency contact inside. When handed to an officer it signals the diagnosis and gives the officer guidance on a patient, clear interaction. Participation is voluntary and confidential.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 8, pages 46-47 (bank items 8.9, 8.12, 8.13)"
+      "basis": "Va. Code § 46.2-203.3; Virginia DMV, Blue Envelope Program"
     },
     "accuracy": {
       "status": "verified",
@@ -3992,7 +3992,7 @@
     "explanation": "Antilock brakes sense when a wheel is about to stop turning and momentarily release pressure on that wheel, then reapply it, many times per second. A rolling tire keeps its steering grip while a locked one just slides, so ABS lets you keep steering during a panic stop. To get that benefit you have to keep your foot down: press hard, hold it, and ignore the pulsing and buzzing you feel through the pedal, because that is the system working. The Virginia Driver's Manual tells drivers to read their owner's manual, practice before relying on it, and never pump antilock brakes. Pumping or tapping hands control back to the technique ABS was built to replace.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 10, page 39; Virginia Driver's Manual, Section 3, Antilock Brakes, p. 15"
+      "basis": "Virginia Driver's Manual Section 3, Antilock Brakes, p. 15"
     },
     "accuracy": {
       "status": "verified",
@@ -4171,7 +4171,7 @@
     "explanation": "Virginia's rule is about your hands, not about the app. Va. Code § 46.2-818.2 makes it unlawful to hold a handheld personal communications device while driving a moving motor vehicle on a highway, with a first offense fined $125, later offenses $250, and a mandatory $250 in a highway work zone. It does not matter whether you are texting, calling or fixing a destination. A phone in a mount giving spoken turn-by-turn directions is permitted, and the Driver's Manual says a device may be used for navigation as long as the driver is neither holding it nor entering information while driving. So set the destination before you pull out, and if it has to change on the way, stop somewhere legal first; the statute excepts a driver who is lawfully parked or stopped.",
     "source": {
       "kind": "reauthored",
-      "basis": "Session 11, page 83; 2026 law verification §1"
+      "basis": "2026 law verification §1; Virginia Driver's Manual Section 3, Distracted Driving, p. 24"
     },
     "accuracy": {
       "status": "verified",
