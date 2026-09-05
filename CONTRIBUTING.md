@@ -85,14 +85,14 @@ with the same concept are variants: the same rule dressed in a different scenari
 without the learner meeting the same question twice. Write a variant when a topic is thin, not
 when you have a second fact -- a second fact is a second concept.
 
-**`source.kind` says where the question came from.** `reauthored` means it restates something
-the source course tests, in new words; `module13` means it comes from the DMV's own Module 13
-material; `experiment` means it was written from a primary source the course does not test
-against. An `experiment` item also carries `source.channel` -- `manual` (Virginia Driver's
+**`source.kind` says where the question came from.** `reauthored` means it restates something the
+course that inspired this review tests, in new words; `module13` means it comes from the DMV's own
+Module 13 material; `experiment` means it was written from a primary source that course does not
+test against. An `experiment` item also carries `source.channel` -- `manual` (Virginia Driver's
 Manual), `code` (Code of Virginia) or `sol` (the VDOE curriculum) -- and `source.citation`, the
 chapter, section number or SOL id it rests on. The app labels these by their source so a learner
-knows the question is inside the curriculum even if it is not in their course, and a setting lets
-them leave such questions out. The accuracy gate is the same for every kind.
+knows the question is inside the curriculum even if their own course never taught it, and a setting
+lets them leave such questions out. The accuracy gate is the same for every kind.
 
 **Every option needs a `rationale`, and every ordering step needs a `why`.** A wrong answer
 should teach why it is wrong, not merely be marked wrong. Feedback addresses what the learner
@@ -112,18 +112,21 @@ than left to rot.
 If a fact cannot be confirmed, leave `accuracy.status` as `unverified` and do not ship it.
 A gap is acceptable; a confident wrong answer is not. Record the gap in `backlog.md`.
 
-### When law and a course disagree
+### When law and that course disagree
 
 Carry both answers:
 
 ```json
 "answer": "c",
 "course_answer": "b",
-"divergence": "The course predates the 2023 amendment and still teaches the old rule."
+"divergence": "The course that inspired this review predates the 2023 amendment
+               and still teaches the old rule."
 ```
 
-The application shows both, because a learner needs one answer to drive by and another to
-pass by. `answer` is always what the law says.
+The application shows both, because a learner whose course taught the old rule needs one answer to
+drive by and another to pass by. `answer` is always what the law says. Name the origin in full on
+first mention and as "that course" after; write "your course" only where the text addresses the
+learner about their own course.
 
 ### The verbatim rule
 

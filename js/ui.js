@@ -70,7 +70,8 @@ function refilter() {
 }
 
 // Items authored from the Commonwealth's own sources rather than from the
-// course. They are inside the curriculum; the tag says where they came from.
+// course that inspired this review. They are inside the curriculum; the tag
+// says where they came from.
 const CHANNELS = {
   manual: 'Virginia Driver\'s Manual',
   code: 'Code of Virginia',
@@ -79,7 +80,7 @@ const CHANNELS = {
 
 function sourceTag(item) {
   if (item.source?.kind !== 'experiment') return '';
-  const label = CHANNELS[item.source.channel] || 'Beyond the course';
+  const label = CHANNELS[item.source.channel] || 'Beyond your course';
   return ` · <span class="tag">${escape(label)}</span>`;
 }
 
@@ -149,7 +150,7 @@ function renderHome() {
 function divergenceNote() {
   const n = state.items.filter((i) => i.course_answer).length;
   if (!n) return '';
-  return `<p class="small muted">${n} item(s) are ones where current Virginia law and the course
+  return `<p class="small muted">${n} item(s) are ones where current Virginia law and the answer your course may have taught you
     disagree. Those are flagged when you meet them — you need both answers: one to drive by, one
     to pass by.</p>`;
 }
@@ -357,10 +358,10 @@ function renderFeedback(item, response, correct) {
 function divergenceBlock(item) {
   const courseText = item.options.find((o) => o.id === item.course_answer)?.text ?? item.course_answer;
   return `<div class="divergence">
-    <p><strong>The course that inspired this review disagrees.</strong> It grades
-      <em>${escape(courseText)}</em> as correct.</p>
+    <p><strong>The answer your course taught you may differ.</strong></p>
     <p class="small">${escape(item.divergence)}</p>
-    <p class="small muted">Answer its way on its quiz. Drive the law's way.</p>
+    <p class="small muted">If your course taught <em>${escape(courseText)}</em>, answer its way on its
+      quiz. Drive the law's way.</p>
   </div>`;
 }
 
@@ -450,7 +451,7 @@ function renderSettings() {
       <label class="check"><input type="checkbox" id="experiment"
         ${state.profile.settings?.experiment !== false ? 'checked' : ''}>
         Include questions drawn from the Virginia Driver's Manual, the Code of Virginia and the
-        VDOE curriculum, not only the course's topics</label>
+        VDOE curriculum, not only what your course taught</label>
     </section>
     <section class="card">
       <h2>Backup</h2>

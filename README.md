@@ -40,7 +40,7 @@ conventions.
 
 An item ships only when `status: "reviewed"` **and** `accuracy.status: "verified"`. Both gates are
 enforced by `tests/test_items.py`, along with the rule that no shipped stem may reproduce a
-question from the source course verbatim.
+question from the course that inspired this review verbatim.
 
 ```json
 {
@@ -69,9 +69,10 @@ Three forms are supported: `multiple_choice`, `true_false`, and `ordering` (whic
 and `answerOrder` instead of `options`). `concept` names the fact the item tests; items that share
 a concept are variants of one another and are never asked in the same session.
 
-**Where current law and the course disagree**, carry both answers: `answer` is what Virginia law
-says, `course_answer` is what the course grades as correct, and `divergence` explains the gap. The
-app shows both — you need one answer to drive by and one to pass by.
+**Where current law and that course disagree**, carry both answers: `answer` is what Virginia law
+says, `course_answer` is the answer that course teaches, and `divergence` explains the gap. The
+app shows both: a learner whose course taught the old rule needs one answer to drive by and one
+to pass by.
 
 Every legal fact needs a primary source: the Code of Virginia, DMV, VDOT, or Virginia DOE. A
 law-firm blog can point you at a change; it can never substantiate one.
