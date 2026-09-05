@@ -112,8 +112,9 @@ Two licences, split by what the file is:
 - **Code** — `index.html`, `styles.css`, `js/`, `tools/`, `tests/`, the workflow — MIT. See
   [LICENSE](LICENSE).
 - **Content** — the question bank and data in `data/`, `research/`, and `credits.ip.html` —
-  [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): share and adapt for
-  non-commercial purposes, with attribution. See [LICENSE-CONTENT](LICENSE-CONTENT).
+  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/): share and adapt
+  for non-commercial purposes, with attribution, and any adaptation under the same licence.
+  See [LICENSE-CONTENT](LICENSE-CONTENT).
 
 The scheduler in `js/fsrs.js` ports the FSRS-4.5 algorithm and default weights published by the
 open-spaced-repetition project under the MIT licence.
