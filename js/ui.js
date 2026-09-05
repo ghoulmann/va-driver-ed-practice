@@ -357,10 +357,10 @@ function renderFeedback(item, response, correct) {
 function divergenceBlock(item) {
   const courseText = item.options.find((o) => o.id === item.course_answer)?.text ?? item.course_answer;
   return `<div class="divergence">
-    <p><strong>The course disagrees.</strong> This course grades
+    <p><strong>The course that inspired this review disagrees.</strong> It grades
       <em>${escape(courseText)}</em> as correct.</p>
     <p class="small">${escape(item.divergence)}</p>
-    <p class="small muted">Answer the course's way on the course's quiz. Drive the law's way.</p>
+    <p class="small muted">Answer its way on its quiz. Drive the law's way.</p>
   </div>`;
 }
 
