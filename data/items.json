@@ -892,7 +892,7 @@
     ],
     "answer": "c",
     "course_answer": "b",
-    "divergence": "The course grades 30 days as correct. Virginia law requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
+    "divergence": "The course that inspired this review grades 30 days as correct. Virginia law requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
     "explanation": "Va. Code § 38.2-2212(E) requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
     "source": {
       "kind": "reauthored",
@@ -925,7 +925,7 @@
       {
         "id": "a",
         "text": "Failing to yield the right-of-way",
-        "rationale": "This IS listed in § 46.2-868.1 — and the course keys it as the exception, which is backwards."
+        "rationale": "This IS listed in § 46.2-868.1 — and the course that inspired this review keys it as the exception, which is backwards."
       },
       {
         "id": "b",
@@ -945,8 +945,8 @@
     ],
     "answer": "c",
     "course_answer": "a",
-    "divergence": "The course grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the course's own reading page says so.",
-    "explanation": "Va. Code § 46.2-868.1 defines aggressive driving in two parts: the driver commits one or more listed violations, and either is a hazard to another person or commits the violation intending to harass, intimidate, injure, or obstruct. Being a hazard is enough on its own; intent is what raises the charge from a Class 2 to a Class 1 misdemeanor. Failure to stop or yield the right-of-way is on the list. The course's own pages disagree with each other on whether intent is required; the statute settles it.",
+    "divergence": "The course that inspired this review grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the reading page of the course that inspired this review that inspired this review says so.",
+    "explanation": "Va. Code § 46.2-868.1 defines aggressive driving in two parts: the driver commits one or more listed violations, and either is a hazard to another person or commits the violation intending to harass, intimidate, injure, or obstruct. Being a hazard is enough on its own; intent is what raises the charge from a Class 2 to a Class 1 misdemeanor. Failure to stop or yield the right-of-way is on the list. The pages of the course that inspired this review that inspired this review disagree with each other on whether intent is required; the statute settles it.",
     "source": {
       "kind": "reauthored",
       "basis": "Va. Code § 46.2-868.1"
@@ -1164,7 +1164,7 @@
           "effective": "2021-07-01"
         }
       ],
-      "note": "The course states the exception's scope two incompatible ways and hides it in a hover tooltip. The statute is the authority here."
+      "note": "The course that inspired this review states the exception's scope two incompatible ways and hides it in a hover tooltip. The statute is the authority here."
     },
     "status": "reviewed"
   },
@@ -2107,7 +2107,7 @@
           "effective": "2026-04-27"
         }
       ],
-      "note": "Manual p. 20: adjust the inside mirror to frame the entire back window and both side mirrors so you can barely see the sides of the vehicle. The course's key on this topic (Session 4 p. 8) is the same direction of adjustment, phrased as seeing less of the vehicle. The effective date is the manual edition's PDF creation date (April 2026 edition); the manual carries no separate in-force date."
+      "note": "Manual p. 20: adjust the inside mirror to frame the entire back window and both side mirrors so you can barely see the sides of the vehicle. The key of the course that inspired this review on this topic (Session 4 p. 8) is the same direction of adjustment, phrased as seeing less of the vehicle. The effective date is the manual edition's PDF creation date (April 2026 edition); the manual carries no separate in-force date."
     },
     "status": "reviewed"
   },
@@ -2305,7 +2305,7 @@
           "effective": "2026-04-27"
         }
       ],
-      "note": "Manual p. 14, Hand Position: sit straight but relaxed; hands at the 8 o'clock and 4 o'clock positions; hold with fingers and thumbs; avoid gripping with the palms. The airbag reasoning in the explanation is the course's stated rationale (Session 3), not the manual's; the manual gives the position without a reason."
+      "note": "Manual p. 14, Hand Position: sit straight but relaxed; hands at the 8 o'clock and 4 o'clock positions; hold with fingers and thumbs; avoid gripping with the palms. The airbag reasoning in the explanation is the stated rationale of the course that inspired this review (Session 3), not the manual's; the manual gives the position without a reason."
     },
     "status": "reviewed"
   },
@@ -2395,7 +2395,7 @@
     ],
     "answer": "c",
     "course_answer": "b",
-    "divergence": "The course teaches one flat three-second gap for every speed (Session 6, page 21, question 6.9). The Driver's Manual scales the gap with speed: 2 seconds under 35 mph, 3 seconds from 35 to 45, 4 seconds from 46 to 70, and it warns that these cushions no longer work above 70. At 60 mph the manual's answer is 4 seconds; a course quiz phrased without a speed would accept 3.",
+    "divergence": "The course that inspired this review teaches one flat three-second gap for every speed (Session 6, page 21, question 6.9). The Driver's Manual scales the gap with speed: 2 seconds under 35 mph, 3 seconds from 35 to 45, 4 seconds from 46 to 70, and it warns that these cushions no longer work above 70. At 60 mph the manual's answer is 4 seconds; a course quiz phrased without a speed would accept 3.",
     "explanation": "The Driver's Manual's following-distance rule grows with speed. Watch the vehicle ahead pass a fixed mark, then count until you reach it: under 35 mph you need 2 seconds, from 35 to 45 mph 3 seconds, and from 46 to 70 mph 4 seconds. If you arrive before the count is up, drop back. Those are dry-road minimums; add time for rain, heavy traffic, a rough surface or a vehicle in poor condition. Above 70 mph the manual says the cushions no longer work.",
     "source": {
       "kind": "reauthored",
@@ -2846,7 +2846,7 @@
           "effective": "1989-07-01"
         }
       ],
-      "note": "§ 46.2-849(B): 'Wherever the lawful speed is more than 35 miles per hour, such signals shall be given continuously for a distance of at least 100 feet, and in all other cases at least 50 feet, before slowing down, stopping, turning, or partly turning.' Latest amendment 2019 c. 780. § 46.2-848 is the duty to signal when another vehicle may be affected; its 'partly turn from a direct line' wording is what brings a lane change under the rule. The course states a flat 100 feet for lane changes (Session 2, page 52), which matches the law at expressway speed but omits the 50-foot tier."
+      "note": "§ 46.2-849(B): 'Wherever the lawful speed is more than 35 miles per hour, such signals shall be given continuously for a distance of at least 100 feet, and in all other cases at least 50 feet, before slowing down, stopping, turning, or partly turning.' Latest amendment 2019 c. 780. § 46.2-848 is the duty to signal when another vehicle may be affected; its 'partly turn from a direct line' wording is what brings a lane change under the rule. The course that inspired this review states a flat 100 feet for lane changes (Session 2, page 52), which matches the law at expressway speed but omits the 50-foot tier."
     },
     "status": "reviewed"
   },
@@ -3391,7 +3391,7 @@
           "effective": "2025-07-01"
         }
       ],
-      "note": "§ 46.2-203.3 (2025, c. 665): Department shall develop a program to print and distribute envelopes for drivers diagnosed with autism spectrum disorder as defined in § 38.2-3418.17; envelope may carry a diagnosis statement, law-enforcement interaction guidelines, space for communication needs, and directions to keep registration, insurance, and emergency contact inside. DMV page: voluntary, confidential, free, no documentation required, available at any customer service center, helps during stops or crashes. The course's own heading for this material is 'Reducing stress and anxiety during traffic stops', which is why it sits under DE.11a."
+      "note": "§ 46.2-203.3 (2025, c. 665): Department shall develop a program to print and distribute envelopes for drivers diagnosed with autism spectrum disorder as defined in § 38.2-3418.17; envelope may carry a diagnosis statement, law-enforcement interaction guidelines, space for communication needs, and directions to keep registration, insurance, and emergency contact inside. DMV page: voluntary, confidential, free, no documentation required, available at any customer service center, helps during stops or crashes. The heading of the course that inspired this review for this material is 'Reducing stress and anxiety during traffic stops', which is why it sits under DE.11a."
     },
     "status": "reviewed"
   },
@@ -5137,7 +5137,7 @@
       {
         "id": "c",
         "text": "30 days",
-        "rationale": "The most common guess, and the answer the course teaches — but the statute says 45."
+        "rationale": "The most common guess, and the answer the course that inspired this review teaches — but the statute says 45."
       },
       {
         "id": "d",
@@ -5147,7 +5147,7 @@
     ],
     "answer": "b",
     "course_answer": "c",
-    "divergence": "The course grades 30 days as correct. Virginia law requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
+    "divergence": "The course that inspired this review grades 30 days as correct. Virginia law requires 45 days' notice of cancellation or nonrenewal, or 15 days where the ground is non-payment of premium.",
     "explanation": "Va. Code § 38.2-2212(E) requires an insurer to give 45 days' notice before canceling or not renewing an auto policy. The one exception is non-payment of premium, where 15 days is enough.",
     "source": {
       "kind": "reauthored",
@@ -5185,7 +5185,7 @@
       {
         "id": "b",
         "text": "Not stopping or yielding the right-of-way",
-        "rationale": "This IS on the list — failure to stop or yield is one of the named predicates. The course keys it as the odd one out, which is backwards."
+        "rationale": "This IS on the list — failure to stop or yield is one of the named predicates. The course that inspired this review keys it as the odd one out, which is backwards."
       },
       {
         "id": "c",
@@ -5200,7 +5200,7 @@
     ],
     "answer": "c",
     "course_answer": "b",
-    "divergence": "The course grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the course's own reading page says so.",
+    "divergence": "The course that inspired this review grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the reading page of the course that inspired this review that inspired this review says so.",
     "explanation": "Va. Code § 46.2-868.1 has two parts. First, the driver must commit one of the offenses on the statute's list — following too closely, failing to stop or yield, passing on the right off the pavement, and any speed violation under Article 8 of Chapter 8 among them. Second, the driver must either be a hazard to another person, or have committed that listed offense intending to harass, intimidate, injure, or obstruct someone. Being a hazard is enough on its own; intent is not required. Intent to injure matters only for the penalty, lifting the offense from a Class 2 to a Class 1 misdemeanor. Rapid acceleration into traffic is not on the list of underlying offenses.",
     "source": {
       "kind": "reauthored",
@@ -5243,7 +5243,7 @@
       {
         "id": "c",
         "text": "Not giving way to a merging car that has the right to the lane",
-        "rationale": "Failure to stop or yield IS a listed offense. The course marks it as the exception, and that is wrong."
+        "rationale": "Failure to stop or yield IS a listed offense. The course that inspired this review marks it as the exception, and that is wrong."
       },
       {
         "id": "d",
@@ -5253,7 +5253,7 @@
     ],
     "answer": "b",
     "course_answer": "c",
-    "divergence": "The course grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the course's own reading page says so.",
+    "divergence": "The course that inspired this review grades 'failing to yield right-of-way' as the exception, but § 46.2-868.1 lists failure to stop or yield the right-of-way among its predicate offenses — and the reading page of the course that inspired this review that inspired this review says so.",
     "explanation": "Va. Code § 46.2-868.1 has two parts. First, the driver must commit one of the offenses on the statute's list — following too closely, failing to stop or yield, passing on the right off the pavement, and any speed violation under Article 8 of Chapter 8 among them. Second, the driver must either be a hazard to another person, or have committed that listed offense intending to harass, intimidate, injure, or obstruct someone. Being a hazard is enough on its own; intent is not required. Intent to injure matters only for the penalty, lifting the offense from a Class 2 to a Class 1 misdemeanor. Rapid acceleration into traffic is not on the list of underlying offenses.",
     "source": {
       "kind": "reauthored",
@@ -5472,7 +5472,7 @@
           "effective": "2021-07-01"
         }
       ],
-      "note": "The course states the exception's scope two incompatible ways and hides it in a hover tooltip. The statute is the authority here."
+      "note": "The course that inspired this review states the exception's scope two incompatible ways and hides it in a hover tooltip. The statute is the authority here."
     },
     "status": "reviewed"
   },
